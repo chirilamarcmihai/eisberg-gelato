@@ -64,7 +64,7 @@ h4 {
     pointer-events: none;
 }
 
-.mini-menu{
+.mini-menu {
     width: 70%;
 }
 
@@ -172,7 +172,6 @@ h4 {
     width: 50%;
     margin-left: 25%;
     margin-right: 25%;
-
 }
 
 .img-gallery .btn-gallery {
@@ -552,8 +551,9 @@ figcaption {
     height: 100%;
     object-fit: cover;
     display: block;
-    margin-right: 0; 
-    transform: rotate(-90deg); z-index: 0;
+    margin-right: 0;
+    transform: rotate(-90deg);
+    z-index: 0;
 }
 
 #contact-menu-item a:after {
@@ -1048,6 +1048,7 @@ a.dropdown-item {
     margin: 0px 20px;
     color: #e1e1e1;
 }
+
 #language {
     padding-top: 5px;
 }
@@ -1075,46 +1076,46 @@ a.dropdown-item {
     border-radius: 0px 11px 11px 0px;
     z-index: 1;
     background-color: #fff;
-  }
-  
-  .social-icon-bar a {
+}
+
+.social-icon-bar a {
     display: block;
     text-align: center;
     padding: 16px;
     transition: all 0.3s ease;
     color: white;
     font-size: 11px;
-  }
+}
 
-  .social-icon-bar  #facebook:hover {
+.social-icon-bar #facebook:hover {
     border-radius: 0px 11px 0px 0px;
 }
 
-.social-icon-bar  #linkedin:hover {
+.social-icon-bar #linkedin:hover {
     border-radius: 0px 0px 11px 0px;
 }
 
-  .social-icon-color {
+.social-icon-color {
     color: #f53323 !important;
-  }
-  
-  .social-icon-bar a:hover {
-    background-color: #ffcece;
-  }
+}
 
-  .social-icon-noncolor {
+.social-icon-bar a:hover {
+    background-color: #ffcece;
+}
+
+.social-icon-noncolor {
     color: rgb(190, 190, 190) !important;
-  }
-  
-  a.social-icon-noncolor:hover {
+}
+
+a.social-icon-noncolor:hover {
     font-size: 29px;
     color: rgb(95, 95, 95) !important;
-  }
-  
-  .footer-social-icon-color {
+}
+
+.footer-social-icon-color {
     color: #fff !important;
-  }
-  
+}
+
 /*******************************/
 
 /***** Horizontal carousel *****/
@@ -1131,9 +1132,10 @@ a.dropdown-item {
 }
 
 .horizontal-carousel-item {
-    min-width: 20%; /* Show 5 images at once */
+    min-width: 20%;
+    /* Show 5 images at once */
     box-sizing: border-box;
-   
+
 }
 
 .horizontal-carousel img {
@@ -1142,6 +1144,7 @@ a.dropdown-item {
     object-fit: cover;
     display: block;
 }
+
 /*******************************/
 .carousel-item-background {
     position: absolute;
@@ -1150,16 +1153,19 @@ a.dropdown-item {
     width: 100%;
     height: 100%;
     background: rgba(77, 77, 77, 0.397);
-    
+
     z-index: 1;
-  }
-  .carousel-item img {
+}
+
+.carousel-item img {
     position: relative;
     z-index: 0;
-  }
-  .carousel-caption{
+}
+
+.carousel-caption {
     z-index: 2;
-  }
+}
+
 /*******************************/
 @keyframes fade-bottom {
     0% {
@@ -1247,7 +1253,6 @@ a.dropdown-item {
     .navbar-nav {
         float: none !important;
     }
-
 
     .carousel-caption {
         float: right;
@@ -1402,16 +1407,64 @@ a.dropdown-item {
 
 /********************************/
 
+.various-desserts-presentation-title {
+    font-family: 'Roboto';
+    color: #303030;
+}
+
+.contact-title {
+    font-family: 'Roboto';
+    color: #303030;
+}
+
+.row-contact {
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px
+}
+
+.contact-title-info {
+
+}
+.contact-info-position{
+    left: 210px; 
+    position: relative;
+}
 
 /********** Media ***************/
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1024px) {
 
     .wrapper-about-company .col-sm-4 {
         width: 50%;
         margin-top: 43px;
         margin-bottom: 43px;
         padding: 35px;
+    }
+
+    .btn-gallery {
+        width: 160px;
+        font-size: 11px;
+        left: 47% !important;
+        background-color: #fff7f8 !important;
+        z-index: 0;
+    }
+
+    .contact-info ul {
+        width: 350px;
+        font-size: 14px;
+    }
+
+    .contact-info h3,
+    .contact-info p,
+    .contact-info ul {
+        color: #333;
+        margin-left: 0 !important;
+    }
+
+    .contact-info-position{
+        left: 170px; 
+        position: relative;
     }
 }
 
@@ -1428,22 +1481,23 @@ a.dropdown-item {
         padding: 25px;
     }
 
-    .wrapper-about-company .col-sm-4 img{
+    .wrapper-about-company .col-sm-4 img {
         width: 100%;
         padding: 25px;
         width: 100%;
     }
 
-    .d-none{
+    .d-none {
         display: contents !important;
     }
 
-    .mini-menu .col-sm-4{
+    .mini-menu .col-sm-4 {
         display: block;
         width: 100%;
     }
 
-    .mini-menu h3, p {
+    .mini-menu h3,
+    p {
         text-align: center;
     }
 
@@ -1457,7 +1511,7 @@ a.dropdown-item {
         width: 100% !important;
     }
 
-    .navbar-nav>li>a:after { 
+    .navbar-nav>li>a:after {
         content: "";
     }
 }
