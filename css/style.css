@@ -1118,7 +1118,7 @@ a.social-icon-noncolor:hover {
 
 /*******************************/
 
-#mini-menu-center-img{
+#mini-menu-center-img {
     width: 201px;
 }
 
@@ -1314,13 +1314,21 @@ a.social-icon-noncolor:hover {
         padding-bottom: 20px;
     }
 
-    .contact-info-position{
-        left: 11px !important; 
+    .contact-info-position {
+        left: 22px !important;
         position: relative;
     }
 
-    #mini-menu-center-img{
+    #mini-menu-center-img {
         width: 119px;
+    }
+
+    .horizontal-carousel-container {
+        display: none;
+    }
+
+    .mini-menu h3, p {
+        text-align: -webkit-auto !important;
     }
 }
 
@@ -1442,12 +1450,10 @@ a.social-icon-noncolor:hover {
     padding-bottom: 20px
 }
 
-.contact-title-info {
+.contact-title-info {}
 
-}
-
-.contact-info-position{
-    left: 210px; 
+.contact-info-position {
+    left: 210px;
     position: relative;
 }
 
@@ -1456,9 +1462,9 @@ a.social-icon-noncolor:hover {
 }
 
 .contact-container {
-    margin-top: 73px; 
-    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(253,29,29,0.08167016806722693) 100%);
-    min-height: 700px; 
+    margin-top: 73px;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(253, 29, 29, 0.08167016806722693) 100%);
+    min-height: 700px;
     height: auto;
 }
 
@@ -1493,14 +1499,14 @@ a.social-icon-noncolor:hover {
         margin-left: 0 !important;
     }
 
-    .contact-info-position{
-        left: 170px; 
+    .contact-info-position {
+        left: 170px;
         position: relative;
     }
 
     .contact-form-info {
         width: 37%;
-        margin-left: 16% ;
+        margin-left: 16%;
     }
 
     .contact-info .contact-methods {
