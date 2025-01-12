@@ -1118,6 +1118,10 @@ a.social-icon-noncolor:hover {
 
 /*******************************/
 
+#mini-menu-center-img{
+    width: 201px;
+}
+
 /***** Horizontal carousel *****/
 .horizontal-carousel-container {
     padding-left: 170px;
@@ -1303,6 +1307,21 @@ a.social-icon-noncolor:hover {
     .logo {
         font-size: 100px;
     }
+
+    .contact-form-info {
+        width: auto !important;
+        margin-left: 12px !important;
+        padding-bottom: 20px;
+    }
+
+    .contact-info-position{
+        left: 11px !important; 
+        position: relative;
+    }
+
+    #mini-menu-center-img{
+        width: 119px;
+    }
 }
 
 
@@ -1426,9 +1445,21 @@ a.social-icon-noncolor:hover {
 .contact-title-info {
 
 }
+
 .contact-info-position{
     left: 210px; 
     position: relative;
+}
+
+.contact-form-info {
+    margin: auto;
+}
+
+.contact-container {
+    margin-top: 73px; 
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(253,29,29,0.08167016806722693) 100%);
+    min-height: 700px; 
+    height: auto;
 }
 
 /********** Media ***************/
@@ -1465,6 +1496,16 @@ a.social-icon-noncolor:hover {
     .contact-info-position{
         left: 170px; 
         position: relative;
+    }
+
+    .contact-form-info {
+        width: 37%;
+        margin-left: 16% ;
+    }
+
+    .contact-info .contact-methods {
+        margin-top: 20px;
+        font-size: 14px;
     }
 }
 

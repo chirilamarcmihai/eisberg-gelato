@@ -5,7 +5,7 @@
   <title>Eisberg</title>
   <link rel="icon" href="./Images/favicon-150x150.png" sizes="32x32" />
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
@@ -239,23 +239,28 @@
     <div class="row row-cols-auto">
       <div class="col-md-4 img-gallery reveal fade-left">
         <div class="card"
-          style="background: linear-gradient(180deg, rgba(255,67,102,0.05646008403361347) 0%, rgba(220,48,48,0) 100%);"  onmouseover="document.querySelector('.deserts-img-menu').src='./Images/eisberg-gelato-deserturi-detail.png';"
+          style="background: linear-gradient(180deg, rgba(255,67,102,0.05646008403361347) 0%, rgba(220,48,48,0) 100%);"
+          onmouseover="document.querySelector('.deserts-img-menu').src='./Images/eisberg-gelato-deserturi-detail.png';"
           onmouseout="document.querySelector('.deserts-img-menu').src='./Images/eisberg-gelato-deserturi.png';">
-          <img src=".\Images\eisberg-gelato-deserturi.png" class="deserts-img-menu img-responsive" style="width:50%; margin:auto;" alt="Image">
+          <img src=".\Images\eisberg-gelato-deserturi.png" class="deserts-img-menu img-responsive"
+            style="width:50%; margin:auto;" alt="Image">
         </div>
-        <button class="btn-gallery" onmouseover="document.querySelector('.deserts-img-menu').src='./Images/eisberg-gelato-deserturi-detail.png';"
-        onmouseout="document.querySelector('.deserts-img-menu').src='./Images/eisberg-gelato-deserturi.png';">DESERTURI</button>
+        <button class="btn-gallery"
+          onmouseover="document.querySelector('.deserts-img-menu').src='./Images/eisberg-gelato-deserturi-detail.png';"
+          onmouseout="document.querySelector('.deserts-img-menu').src='./Images/eisberg-gelato-deserturi.png';">DESERTURI</button>
       </div>
 
       <div class="col-md-4 img-gallery reveal fade-in">
         <div class="card"
-          style="background: linear-gradient(180deg, rgba(255,67,102,0.05646008403361347) 0%, rgba(220,48,48,0) 100%);" onmouseover="document.querySelector('.eiscream-img-menu').src='./Images/eisberg-gelato-inghetata-detail.png';"
+          style="background: linear-gradient(180deg, rgba(255,67,102,0.05646008403361347) 0%, rgba(220,48,48,0) 100%);"
+          onmouseover="document.querySelector('.eiscream-img-menu').src='./Images/eisberg-gelato-inghetata-detail.png';"
           onmouseout="document.querySelector('.eiscream-img-menu').src='./Images/eisberg-gelato-inghetata.png';">
-          <img src=".\Images\eisberg-gelato-inghetata.png" class="eiscream-img-menu img-responsive" style="width:50%; margin:auto;"
-            alt="Image">
+          <img src=".\Images\eisberg-gelato-inghetata.png" class="eiscream-img-menu img-responsive"
+            style="width:50%; margin:auto;" alt="Image">
         </div>
-        <button class="btn-gallery" onmouseover="document.querySelector('.eiscream-img-menu').src='./Images/eisberg-gelato-inghetata-detail.png';"
-        onmouseout="document.querySelector('.eiscream-img-menu').src='./Images/eisberg-gelato-inghetata.png';">ÎNGHEȚATĂ</button>
+        <button class="btn-gallery"
+          onmouseover="document.querySelector('.eiscream-img-menu').src='./Images/eisberg-gelato-inghetata-detail.png';"
+          onmouseout="document.querySelector('.eiscream-img-menu').src='./Images/eisberg-gelato-inghetata.png';">ÎNGHEȚATĂ</button>
       </div>
 
       <div class="col-md-4 img-gallery reveal fade-right">
@@ -301,7 +306,7 @@
         </div>
 
         <div class="col-sm-4 reveal fade-in center-element">
-          <img src=".\Images\iaurt-cirese-min.png" alt="Iaurt cirese min" style="width: 201px;" />
+          <img src=".\Images\iaurt-cirese-min.png" alt="Iaurt cirese min" id="mini-menu-center-img" />
         </div>
 
         <div class="col-sm-4 reveal fade-right">
@@ -341,8 +346,7 @@
     </div>
 
     <!-- Contact  -->
-    <div id="contact" class="row justify-content-center"
-      style="margin-top: 73px; background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(253,29,29,0.08167016806722693) 100%); height: 700px;">
+    <div id="contact" class="row justify-content-center contact-container">
 
       <div class="col-1"
         style="background-image: url('./Images/waves_contact_vertical.png');background-size: contain;height: inherit;float: right;position: absolute;right: 0px;">
@@ -352,7 +356,7 @@
         <h2 class="center-element contact-title">Contact</h2>
       </div>
 
-      <div class="row reveal fade-in" style=" position: relative;">
+      <div class="row reveal fade-in" style="position: relative;">
         <div class="col-md-5 contact-info contact-info-position">
           <h3 class="contact-title-info">De ce Eisberg:</h3>
           <ul>
@@ -394,7 +398,7 @@
           </div>
         </div>
 
-        <div class="col-md-3" style="margin: auto;">
+        <div class="col-md-3 contact-form-info">
           <form class="contact-form">
             <div class="form-group">
               <input type="text" class="form-control" id="name" placeholder="Nume complet">
@@ -545,13 +549,15 @@
               $(this).addClass("slide");
             }
           });
+
+          var screenWidth = $(window).width();
           var windowHeight = $(window).height();
 
           var aboutSectionTop = $("#about").offset().top;
           var contactSectionTop = $("#contact").offset().top;
           var scrollTop = $(window).scrollTop();
 
-          if (scrollTop >= aboutSectionTop && scrollTop + 600 <= contactSectionTop) {
+          if (scrollTop >= aboutSectionTop && scrollTop + 600 <= contactSectionTop && screenWidth > 500) {
             $("#socialIconBar").fadeIn();
           } else {
             $("#socialIconBar").fadeOut();
@@ -586,9 +592,9 @@
         const totalItems = items.length;
         let currentIndex = 0;
         let lastTime = 0;
-
+        
         // Clone the first few items to create a seamless loop
-        for (let i = 0; i < 5; i++) {
+        for (let i = 0; i < nrOfImg; i++) {
           const clone = items[i].cloneNode(true);
           carousel.appendChild(clone);
         }
