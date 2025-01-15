@@ -73,13 +73,9 @@ h4 {
     width: 70%;
 }
 
-.row {
-    margin-right: -11px;
-}
-
-div {
+* {
     box-sizing: border-box;
-}
+  }
 
 /******** Tabs ***********************/
 
@@ -363,7 +359,7 @@ div {
 
 .carousel-row {
     height: 700px;
-    margin-right: 0 !important;
+    margin-right: -5px !important;
     margin-left: 0 !important;
 }
 
