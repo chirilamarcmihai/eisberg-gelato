@@ -1184,6 +1184,10 @@ a.social-icon-noncolor:hover {
       display: block;
   }
 
+  #navbarDropdownProducts {
+    outline: none;
+  }
+
 /*******************************/
 @keyframes fade-bottom {
     0% {
@@ -1324,7 +1328,7 @@ a.social-icon-noncolor:hover {
     }
 }
 
-@media screen and (min-width: 370px) {
+@media screen and (min-width: 320px) and (max-width: 510px) {
     .logo {
         font-size: 100px;
     }
