@@ -1380,6 +1380,10 @@ a.social-icon-noncolor:hover {
     #send-email-btn {
         width: 100%;
     }
+
+    #various-desserts-title {
+        font-size: 22px;
+    }
 }
 
 /******* Arrows menu *************/
