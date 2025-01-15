@@ -6,12 +6,6 @@ body {
     overflow-x: hidden !important;
 }
 
-body,
-html {
-    width: 103%;
-    padding-left: 5px;
-}
-
 h1 {
     font-size: 37px;
     font-family: 'Playfair Display';
