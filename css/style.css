@@ -9,6 +9,7 @@ body {
 body,
 html {
     width: 103%;
+    padding-left: 5px;
 }
 
 h1 {
