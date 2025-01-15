@@ -1324,7 +1324,7 @@ a.social-icon-noncolor:hover {
     }
 }
 
-@media screen and (max-width: 411px) {
+@media screen and (min-width: 370px) {
     .logo {
         font-size: 100px;
     }
@@ -1368,6 +1368,39 @@ a.social-icon-noncolor:hover {
     }
 }
 
+/******* Arrows menu *************/
+
+.arrow {
+    border: solid black;
+    border-width: 0 1px 1px 0px;
+    display: inline-block;
+    padding: 2px;
+    font-weight: 100;
+    margin-top: -5px;
+    vertical-align: middle
+  }
+  
+  .right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+  
+  .left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  }
+  
+  .up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+  }
+  
+  .down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+
+/*********************************/
 
 /******* Vertical carousel *******/
 
