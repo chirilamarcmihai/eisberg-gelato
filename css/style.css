@@ -1170,6 +1170,20 @@ a.social-icon-noncolor:hover {
     z-index: 2;
 }
 
+.dropdown-submenu {
+    position: relative;
+  }
+  
+  .dropdown-submenu .dropdown-menu {
+    top: 10%;
+    left: 100%;
+    margin-top: -1px;
+  }
+  
+  .navbar-nav li:hover > ul.dropdown-menu {
+      display: block;
+  }
+
 /*******************************/
 @keyframes fade-bottom {
     0% {
@@ -1286,7 +1300,14 @@ a.social-icon-noncolor:hover {
     }
 
     .collapse>ul {
-        padding-left: 30px !important;
+        margin-top: 11px !important;
+        padding-left: 40px !important;
+        text-align: center;
+    }
+
+    .collapsing>ul {
+        margin-top: 11px !important;
+        padding-left: 40px !important;
         text-align: center;
     }
 }
@@ -1303,15 +1324,16 @@ a.social-icon-noncolor:hover {
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 411px) {
     .logo {
         font-size: 100px;
     }
 
     .contact-form-info {
-        width: auto !important;
-        margin-left: 12px !important;
+        width: 96% !important;
+        margin-left: 10px !important;
         padding-bottom: 20px;
+
     }
 
     .contact-info-position {
@@ -1329,6 +1351,20 @@ a.social-icon-noncolor:hover {
 
     .mini-menu h3, p {
         text-align: -webkit-auto !important;
+    }
+
+    #products-submenu{
+        margin-right: 83px !important;
+        margin-left: 57px !important;
+        display: none;
+      }
+
+      #deserts-submenu{
+      }
+
+      a#navbarDropdownDesserts, a#navbarDropdownDesserts {
+        margin-left: 11px;
+        text-transform: uppercase;
     }
 }
 
