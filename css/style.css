@@ -71,7 +71,7 @@ h4 {
 
 * {
     box-sizing: border-box;
-  }
+}
 
 /******** Tabs ***********************/
 
@@ -1375,6 +1375,15 @@ a.social-icon-noncolor:hover {
     a#navbarDropdownDesserts {
         margin-left: 11px;
         text-transform: uppercase;
+    }
+
+    #send-email-btn {
+        width: 100%;
+    }
+    #foo
+    ter-img-logo {
+        
+        position: relative;
     }
 }
 
