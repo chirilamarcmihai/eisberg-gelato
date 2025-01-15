@@ -3,6 +3,7 @@ body {
     line-height: 1.8;
     color: #303030;
     margin: 0;
+    overflow-x: hidden !important;
 }
 
 body,
