@@ -1189,7 +1189,15 @@ a.social-icon-noncolor:hover {
     display: block;
 }
 
+#navbarDropdownProducts{
+    outline: none;
+}
+
 #navbarDropdownProducts:focus {
+    outline: none;
+}
+
+#navbarDropdownProducts:active {
     outline: none;
 }
 
