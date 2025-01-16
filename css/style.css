@@ -1691,6 +1691,7 @@ a.social-icon-noncolor:hover {
     }
 
     .img-presentation-grid {
+        width: 130px;
         height: 119px;
     }
 
@@ -1712,6 +1713,15 @@ a.social-icon-noncolor:hover {
 
     .tabs-product-details {
         margin-right: 21px;
+    }
+
+    .header-section-subtitle>.carousel-caption-description  {
+        font-size: 22px !important;
+        text-align: center;
+    }
+
+    .ice-cream-grid-img-position {
+        margin-left: 16px;
     }
 }
 
