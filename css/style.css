@@ -1276,116 +1276,6 @@ a.social-icon-noncolor:hover {
     }
 }
 
-@media (min-width: 768px) {
-    .navbar-nav {
-        float: none !important;
-    }
-
-    .carousel-caption {
-        float: right;
-        text-align: right;
-        right: 10%;
-        left: 50%;
-        width: 40%;
-    }
-}
-
-@media screen and (min-width: 768px) {
-
-    .carousel-control .glyphicon-chevron-left,
-    .carousel-control .glyphicon-chevron-right,
-    .carousel-control .icon-next,
-    .carousel-control .icon-prev {
-        width: 30px;
-        height: 48px;
-        margin-top: -10px;
-        font-size: 41px;
-    }
-}
-
-@media (max-width: 768px) {
-    .nav>li>a:after {
-        content: "";
-    }
-
-    .collapse>ul {
-        margin-top: 11px !important;
-        padding-left: 40px !important;
-        text-align: center;
-    }
-
-    .collapsing>ul {
-        margin-top: 11px !important;
-        padding-left: 40px !important;
-        text-align: center;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .col-sm-4 {
-        text-align: center;
-        margin: 25px 0;
-    }
-
-    .btn-lg {
-        width: 100%;
-        margin-bottom: 35px;
-    }
-}
-
-@media screen and (min-width: 320px) and (max-width: 510px) {
-    .logo {
-        font-size: 100px;
-    }
-
-    .contact-form-info {
-        width: 96% !important;
-        margin-left: 10px !important;
-        padding-bottom: 20px;
-
-    }
-
-    .contact-info-position {
-        left: 22px !important;
-        position: relative;
-    }
-
-    #mini-menu-center-img {
-        width: 119px;
-    }
-
-    .horizontal-carousel-container {
-        display: none;
-    }
-
-    .mini-menu h3,
-    p {
-        text-align: -webkit-auto !important;
-    }
-
-    #products-submenu {
-        margin-right: 83px !important;
-        margin-left: 57px !important;
-        display: none;
-    }
-
-    #deserts-submenu {}
-
-    a#navbarDropdownDesserts,
-    a#navbarDropdownDesserts {
-        margin-left: 11px;
-        text-transform: uppercase;
-    }
-
-    #send-email-btn {
-        width: 100%;
-    }
-
-    #various-desserts-title {
-        font-size: 22px;
-    }
-}
-
 /******* Arrows menu *************/
 
 .arrow {
@@ -1498,26 +1388,6 @@ a.social-icon-noncolor:hover {
 
 }
 
-@media only screen and (max-width: 980px) {
-    .slider {
-        height: 100px;
-        margin: auto;
-        overflow: hidden;
-        position: relative;
-        width: 100%;
-    }
-
-    .slide-track {
-        animation: scrollXvertical 40s linear infinite;
-        display: flex;
-        width: calc(250px * 14);
-    }
-
-    .slide-vertical {
-        height: 100px;
-        width: 250px;
-    }
-}
 
 /********************************/
 
@@ -1540,7 +1410,6 @@ a.social-icon-noncolor:hover {
 .contact-title-info {}
 
 .contact-info-position {
-    left: 210px;
     position: relative;
 }
 
@@ -1555,9 +1424,13 @@ a.social-icon-noncolor:hover {
     height: auto;
 }
 
+#send-email-btn {
+    width: 100%;
+}
+
 /********** Media ***************/
 
-@media only screen and (max-width: 1024px) {
+@media (max-width: 1024px) {
 
     .wrapper-about-company .col-sm-4 {
         width: 50%;
@@ -1587,8 +1460,7 @@ a.social-icon-noncolor:hover {
     }
 
     .contact-info-position {
-        left: 170px;
-        position: relative;
+        /* left: 170px; */
     }
 
     .contact-form-info {
@@ -1600,9 +1472,191 @@ a.social-icon-noncolor:hover {
         margin-top: 20px;
         font-size: 14px;
     }
+
+    .mini-menu h3,
+    p {
+        text-align: left;
+    }
+
+    .horizontal-carousel-container {
+        padding-left: 101px;
+    }
 }
 
-@media only screen and (max-width: 770px) {
+@media (max-width: 980px) {
+    .slider {
+        height: 100px;
+        margin: auto;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+    }
+
+    .slide-track {
+        animation: scrollXvertical 40s linear infinite;
+        display: flex;
+        width: calc(250px * 14);
+    }
+
+    .slide-vertical {
+        height: 100px;
+        width: 250px;
+    }
+}
+
+@media (min-width: 768px) {
+    .navbar-nav {
+        float: none !important;
+    }
+
+    .carousel-caption {
+        float: right;
+        text-align: right;
+        right: 10%;
+        left: 50%;
+        width: 40%;
+    }
+
+    .carousel-control .glyphicon-chevron-left,
+    .carousel-control .glyphicon-chevron-right,
+    .carousel-control .icon-next,
+    .carousel-control .icon-prev {
+        width: 30px;
+        height: 48px;
+        margin-top: -10px;
+        font-size: 41px;
+    }
+
+    .contact-info-position {
+        left: 41px;
+    }
+
+    .contact-form-info {
+        width: 43%;
+        margin-left: 14%;
+    }
+
+    #contact {
+        margin-top: 70px !important;
+    }
+
+    .horizontal-carousel img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .row.center-element {
+        width: 91%;
+        margin-left: 5%;
+        margin-right: 11%;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav>li>a:after {
+        content: "";
+    }
+
+    .collapse>ul {
+        margin-top: 11px !important;
+        padding-left: 40px !important;
+        text-align: center;
+    }
+
+    .collapsing>ul {
+        margin-top: 11px !important;
+        padding-left: 40px !important;
+        text-align: center;
+    }
+
+    .col-sm-4 {
+        text-align: center;
+        margin: 25px 0;
+    }
+
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+
+    #send-email-btn {
+        width: 100%;
+    }
+
+    .card{
+        margin-left:  7px;
+        margin-right: 7px;
+    }
+
+    #mini-menu {
+        margin-left: 3px;
+    }
+
+    .row.center-element {
+        width: 91%;
+        margin-left: 5%;
+        margin-right: 11%;
+    }
+
+    .horizontal-carousel-container {
+        padding-left: 57px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 510px) {
+    .logo {
+        font-size: 100px;
+    }
+
+    .contact-form-info {
+        width: 96% !important;
+        margin-left: 10px !important;
+        padding-bottom: 20px;
+
+    }
+
+    .contact-info-position {
+        left: 22px !important;
+        position: relative;
+    }
+
+    #mini-menu-center-img {
+        width: 119px;
+    }
+
+    .horizontal-carousel-container {
+        display: none;
+    }
+
+    .mini-menu h3,
+    p {
+        text-align: -webkit-auto !important;
+    }
+
+    #products-submenu {
+        margin-right: 83px !important;
+        margin-left: 57px !important;
+        display: none;
+    }
+
+    #deserts-submenu {}
+
+    a#navbarDropdownDesserts,
+    a#navbarDropdownDesserts {
+        margin-left: 11px;
+        text-transform: uppercase;
+    }
+
+    #send-email-btn {
+        width: 100%;
+    }
+
+    #various-desserts-title {
+        font-size: 22px;
+    }
+}
+
+@media only screen and (max-width: 765px) {
 
     .wrapper-about-company {
         display: block;
