@@ -26,6 +26,7 @@
 
 <body id="tortPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
+  <!-- Logo -->
   <div class="jumbotron text-center inner clearfix">
     <a href="../../index.html">
       <img src="../../../Images/logo-eisberg.png" width="250" height="100">
@@ -34,13 +35,13 @@
 
   <!-- Navbar  -->
   <nav class="navbar navbar-expand-sm navbar-light bg-light">
-    <div class="container-fluid">
+    <div class="container-fluid justify-content-center text-center">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="../../../index.html">ACASA</a>
@@ -49,22 +50,23 @@
             <a class="nav-link" href="#about">DESPRE NOI</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="produse.html" id="navbarDropdown" role="link"
-              data-bs-toggle="dropdown" aria-expanded="false">PRODUSE</a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="nav-link dropdown-toggle" href="produse.html" id="navbarDropdownProducts" role="link"
+              data-bs-toggle="dropdown" aria-expanded="false">PRODUSE <i class="arrow down"
+                id="navbarDropdownProducts"></i></a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownProducts" id="products-submenu">
               <li class="nav-item dropend">
-                <a class="nav-link dropdown-toggle" href="../deserturi/deserturi.html" id="navbarDropdown" role="link"
-                  data-bs-toggle="dropdown" aria-expanded="false">DESERTURI</a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="../deserturi/monoportii/monoportii.html">Monoporții</a></li>
+                <a class="nav-link dropdown-toggle" href="../deserturi/deserturi.html" id="navbarDropdownDesserts"
+                  role="link" data-bs-toggle="dropdown" aria-expanded="false">DESERTURI</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownDesserts" id="deserts-submenu">
+                  <li><a class="dropdown-item" href="/produse/deserturi/monoportii/monoportii.html">Monoporții</a></li>
                   <li>
                     <hr class="dropdown-divider">
                   </li>
-                  <li><a class="dropdown-item" href="../deserturi/monoportii/torturi.html">TORTURI</a></li>
+                  <li><a class="dropdown-item" href="/produse/deserturi/torturi/torturi.html">TORTURI</a></li>
                   <li>
                     <hr class="dropdown-divider">
                   </li>
-                  <li><a class="dropdown-item" href="../deserturi/monoportii/slice-n-go.html">SLICE N`GO</a></li>
+                  <li><a class="dropdown-item" href="/produse/deserturi/slice-n-go/slice-n-go.html">SLICE N`GO</a></li>
                 </ul>
               </li>
               <li>
@@ -74,53 +76,61 @@
                 <a class="nav-link dropdown-toggle" href="../produse.html" id="navbarDropdown" role="link"
                   data-bs-toggle="dropdown" aria-expanded="false">Înghețată</a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Înghețată în ceramică</a></li>
+                  <li><a class="dropdown-item" href="/produse/inghetate/inghetata-monoportii.html">Înghețată
+                      monoporții</a></li>
                   <li>
                     <hr class="dropdown-divider">
                   </li>
-                  <li><a class="dropdown-item" href="#">Înghețată în fruct</a></li>
-                  <li>
-                    <hr class="dropdown-divider">
-                  </li>
-                  <li><a class="dropdown-item" href="#">Înghețată vaschetă</a></li>
+                  <li><a class="dropdown-item" href="/produse/inghetate/inghetata-in-vascheta.html">Înghețată
+                      vaschetă</a></li>
                 </ul>
               </li>
               <li>
                 <hr class="dropdown-divider">
               </li>
-              <li><a class="dropdown-item" href="#">FRUTTINI SMOOTHIES</a></li>
+              <li><a class="dropdown-item" href="../../produse/fruttini-smoothies/fruttini-smoothies.html">FRUTTINI
+                  SMOOTHIES</a></li>
               <li>
                 <hr class="dropdown-divider">
               </li>
-              <li><a class="dropdown-item" href="#">VALORI NUTRITIONALE</a></li>
+              <li><a class="dropdown-item" href="/produse/valori-nutritionale.pdf">VALORI NUTRITIONALE</a></li>
             </ul>
           </li>
-          <li class="nav-item" id="contact">
-            <a class="nav-link" href="../../contact.html">CONTACT</a>
+          <script>
+            $(document).ready(function () {
+              $("a[href='produse.html']").click(function (event) {
+                event.preventDefault();
+                $("#products-submenu").toggle();
+              });
+            });
+          </script>
+          <li class="nav-item" id="contact-menu-item">
+            <a class="nav-link" href="#contact">CONTACT</a>
+          </li>
+          <li class="nav-item" id="language">
+            <a href="#ro"><img src="../../../Images/flags/ro-flag-ico.ico" alt="Ro flag" class="flag flag-ro"
+                title="RO"></img></a>
+            <a href="#en"><img src="../../../Images/flags/usa-flag-png.png" alt="Usa flag" class="flag flag-usa"
+                title="EN"></img></a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-  <div style="border-bottom: 1px solid #c5c5c5;box-shadow: 0px 7px 16px #747474, 0px 0px 7px #797676;">
 
-  </div>
-  <!-- Container (Home Section) -->
+  <div style="border-bottom: 1px solid #c5c5c5;box-shadow: 0px 7px 16px #747474, 0px 0px 7px #797676;"></div>
+
+  <!-- Container -->
   <div id="monoportii" class="container-fluid">
     <div class="container-fluid">
 
       <!-- Header section -->
-      <div class="row row-cols-auto justify-content-center header-section-title">
-
-      </div>
-      <div class="row row-cols-auto justify-content-center header-section-subtitle">
-
-      </div>
-
+      <div class="row row-cols-auto justify-content-center header-section-title"></div>
+  
       <!-- Grid products section -->
       <div class="row row-cols-auto justify-content-center">
         <div class="col-sm-auto p-3">
-          <!-- Product image slider -->
+          <!-- Product image -->
           <div class="container-product-slider justify-content-center">
             <div class="productImgSlides">
               <img src="/Images/deserturi/slice-n-go/choco-forest-fruits-slice.png" alt="Choco forest fruits slice"
@@ -131,75 +141,77 @@
 
         <div class="col-sm-4 p-3 header-section-subtitle">
           <div class="row">
-            <h3 class="carousel-caption-description-adjective" style="left:0; color: #2e2e2e !important;">Choco forest fruits slice
+            <h3 class="carousel-caption-description-adjective" style="left:0; color: #2e2e2e !important;">Choco forest
+              fruits slice
             </h3>
           </div>
 
           <!-- Tabs product info -->
-          <div class="row">
+          <div class="row tabs-product-details">
             <div class="tab">
               <button class="tablinks active" onclick="openTab(event, 'Description')">Descriere</button>
               <button class="tablinks" onclick="openTab(event, 'Ingredients')">Ingrediente</button>
             </div>
 
             <div id="Description" class="tabcontent" style="display: block;">
-              <p>Mousse de ciocolată albă și fructe de pădure, glazurat cu ciocolată amăruie și perle de cereale glazurate cu ciocolată ruby.
+              <p>Mousse de ciocolată albă și fructe de pădure, glazurat cu ciocolată amăruie și perle de cereale
+                glazurate cu ciocolată ruby.
               </p>
             </div>
 
             <div id="Ingredients" class="tabcontent">
               <p>fructe de pădure, ciocolată albă, ciocolată amăruie, ciocolată ruby</p>
             </div>
-
           </div>
 
-          <div class="row" style="height: 25px;">
-            <div class="col-sm-auto">
-              <img src="../../../Images/glyphs/spoon-sm.png" alt="Spoon"
-                style="width: 21px; height: 17px; margin-top: -4px;"></img>
+          <!-- Info product  -->
+          <div class="info-product-details">
+            <div class="row row-cols-auto">
+              <div class="col-sm-2">
+                <img src="../../../Images/glyphs/spoon-sm.png" alt="Spoon"
+                  style="width: 21px; height: 17px; margin-top: -4px;"></img>
+              </div>
+              <div class="col-sm-3" style="padding-left: 0;">
+                <p style="color: #fb3521; font-family: 'Roboto';">MOD DE SERVIRE</p>
+              </div>
             </div>
-            <div class="col-sm-3" style="padding-left: 0;">
-              <p style="color: #fb3521; font-family: 'Roboto';">MOD DE SERVIRE</p>
-            </div>
-          </div>
 
-          <div class="row">
-            <p>Nu necesită decongelare prealabilă. Se scoate porția din congelator, se lasă 5 - 10 minute la temperatura
-              camerei, după care se servește.
-            </p>
-          </div>
+            <div class="row row-cols-auto">
+              <p>Nu necesită decongelare prealabilă. Se scoate porția din congelator, se lasă 5 - 10 minute la
+                temperatura
+                camerei, după care se servește.
+              </p>
+            </div>
 
-          <div class="row" style="height: 25px;">
-            <div class="col-sm-auto">
-              <img src="../../../Images/glyphs/balance-scale-sm.png" alt="Balance scale"
-                style="width: 21px; height: 17px; margin-top: -2px;"></img>
+            <div class="row row-cols-auto">
+              <div class="col-sm-2">
+                <img src="../../../Images/glyphs/balance-scale-sm.png" alt="Balance scale"
+                  style="width: 21px; height: 17px; margin-top: -2px;"></img>
+              </div>
+              <div class="col-sm-3" style="padding-left: 0;">
+                <p style="color: #fb3521; font-family: 'Roboto'">Greutate</p>
+              </div>
             </div>
-            <div class="col-sm-auto" style="padding-left: 0;">
-              <p style="color: #fb3521; font-family: 'Roboto'">Greutate</p>
-            </div>
-          </div>
 
-          <div class="row">
-            <p>100g</p>
-          </div>
+            <div class="row row-cols-auto">
+              <p>100g</p>
+            </div>
 
-          <div class="row" style="height: 25px;">
-            <div class="col-sm-auto">
-              <img src="../../../Images/glyphs/pie-slice-sm.png" alt="Pie slice"
-                style="width: 21px; height: 17px; margin-top: -2px;"></img>
+            <div class="row row-cols-auto">
+              <div class="col-sm-2">
+                <img src="../../../Images/glyphs/pie-slice-sm.png" alt="Pie slice"
+                  style="width: 21px; height: 17px; margin-top: -2px;"></img>
+              </div>
+              <div class="col-sm-3" style="padding-left: 0;">
+                <p style="color: #fb3521; font-family: 'Roboto'">Porții / cutie</p>
+              </div>
             </div>
-            <div class="col-sm-3" style="padding-left: 0;">
-              <p style="color: #fb3521; font-family: 'Roboto'">Porții / cutie</p>
+            <div class="row row-cols-auto">
+              <p>12 porții</p>
             </div>
-          </div>
-          <div class="row">
-            <p>12 porții</p>
           </div>
         </div>
       </div>
-    </div>
-    <div class="row">
-      <br><br><br>
     </div>
 
     <!-- Footer -->
@@ -353,7 +365,7 @@
         dots[slideIndex - 1].className += " active";
       }
     </script>
-
+  </div>
 </body>
 
 </html>
