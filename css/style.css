@@ -1691,7 +1691,7 @@ a.social-icon-noncolor:hover {
     }
 
     .img-presentation-grid {
-        width: 130px;
+        width: auto;
         height: 119px;
     }
 
@@ -1720,8 +1720,8 @@ a.social-icon-noncolor:hover {
         text-align: center;
     }
 
-    .ice-cream-grid-img-position {
-        margin-left: 16px;
+    .grid-img-position {
+        margin-left: 24px;
     }
 }
 
