@@ -1452,6 +1452,21 @@ a.social-icon-noncolor:hover {
     left: 11%;
 }
 
+
+#banner-section-background {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: inherit;
+    background: rgba(77, 77, 77, 0.397);
+    z-index: 1;
+}
+
+#grid-products-section{
+    max-width: 1000px;
+    margin: auto;
+}
+
 /********** Media ***************/
 
 @media (min-width: 1024px) {
@@ -1465,6 +1480,11 @@ a.social-icon-noncolor:hover {
 
     .info-product-details .row.row-cols-auto>.col-sm-2 {
         width: auto;
+    }
+
+    .figure-section {
+        width: 260px;
+        height: 231px;
     }
 }
 
@@ -1607,7 +1627,7 @@ a.social-icon-noncolor:hover {
     }
 
     #footer-section {
-        margin-top: 20px;
+        margin-top: 73px;
     }
 }
 
@@ -1747,16 +1767,6 @@ a.social-icon-noncolor:hover {
 
     .banner-section-img {
         object-fit: scale-down;
-    }
-
-    #banner-section-background {
-        position: absolute;
-
-        left: 0;
-        width: 100%;
-        height: inherit;
-        background: rgba(77, 77, 77, 0.397);
-        z-index: 1;
     }
 
     .figure-section {
