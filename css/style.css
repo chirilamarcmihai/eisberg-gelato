@@ -853,8 +853,7 @@ ul.breadcrumb li a:hover {
 .contact-info h3,
 .contact-info p,
 .contact-info ul {
-    color: #333;
-    margin-left: 20%;
+    color: #303030;
 }
 
 .contact-info h3 {
@@ -876,7 +875,7 @@ ul.breadcrumb li a:hover {
 .contact-info ul {
     list-style-type: none;
     padding: 0;
-    width: 450px;
+    width: auto;
 }
 
 .contact-info ul li {
@@ -985,8 +984,8 @@ footer div a {
 }
 
 .navbar-expand-sm .navbar-nav .nav-link {
-    padding-right: 0;
-    padding-left: 0;
+    /* padding-right: 0;
+    padding-left: 0; */
 }
 
 .dropdown-toggle::after {
@@ -1001,8 +1000,8 @@ footer div a {
 }
 
 a#navbarDropdown,
+a#navbarDropdownDesserts,
 a.dropdown-item {
-    margin-left: 11px;
     text-transform: uppercase;
 }
 
@@ -1023,6 +1022,7 @@ a.dropdown-item {
     border-bottom: .4em solid transparent;
     border-left: .4em solid;
     margin-left: initial !important;
+    top:5px
 }
 
 .navbar-nav li a:hover,
@@ -1056,10 +1056,6 @@ a.dropdown-item {
     display: inline-block;
     margin: 0px 20px;
     color: #e1e1e1;
-}
-
-#language {
-    padding-top: 5px;
 }
 
 .flag {
@@ -1203,6 +1199,10 @@ a.social-icon-noncolor:hover {
 
 #navbarDropdownProducts:active {
     outline: none;
+}
+
+.nav-link {
+    display: initial;
 }
 
 /*******************************/
@@ -1397,9 +1397,7 @@ a.social-icon-noncolor:hover {
     display: inline-block;
     vertical-align: middle;
     padding: 37px;
-
 }
-
 
 /********************************/
 
@@ -1440,7 +1438,35 @@ a.social-icon-noncolor:hover {
     width: 100%;
 }
 
+#footer-section {
+    width: 100%;
+    margin: 0;
+    background-color: #fb3521;
+    background-image: linear-gradient(1deg, #971e129e, #fb3521);
+    color: #fff;
+    font-family: 'Roboto';
+    box-shadow: 0px -1px 0px #888, 0px -3px 18px #797676;
+}
+
+.contact-info-position {
+    left: 11%;
+}
+
 /********** Media ***************/
+
+@media (min-width: 1024px) {
+    .info-product-details .row.row-cols-auto>.col-sm-3 {
+        width: 81% !important;
+    }
+
+    .col-sm-4.header-section-subtitle {
+        width: auto;
+    }
+
+    .info-product-details .row.row-cols-auto>.col-sm-2 {
+        width: auto;
+    }
+}
 
 @media (max-width: 1024px) {
 
@@ -1471,10 +1497,6 @@ a.social-icon-noncolor:hover {
         margin-left: 0 !important;
     }
 
-    .contact-info-position {
-        /* left: 170px; */
-    }
-
     .contact-form-info {
         width: 37%;
         margin-left: 16%;
@@ -1492,6 +1514,19 @@ a.social-icon-noncolor:hover {
 
     .horizontal-carousel-container {
         padding-left: 101px;
+    }
+
+    .info-product-details .row.row-cols-auto>.col-sm-3 {
+        width: 81% !important;
+    }
+
+    .col-sm-4.header-section-subtitle {
+        width: 53% !important;
+    }
+
+
+    .info-product-details .row.row-cols-auto>.col-sm-2 {
+        width: auto;
     }
 }
 
@@ -1513,6 +1548,18 @@ a.social-icon-noncolor:hover {
     .slide-vertical {
         height: 100px;
         width: 250px;
+    }
+
+    .info-product-details>.col-sm-3 {
+        width: 81% !important;
+    }
+
+    .info-product-details .row.row-cols-auto>.col-sm-2 {
+        width: auto !important;
+    }
+
+    .col-sm-4.header-section-subtitle {
+        width: 53% !important;
     }
 }
 
@@ -1539,10 +1586,6 @@ a.social-icon-noncolor:hover {
         font-size: 41px;
     }
 
-    .contact-info-position {
-        left: 41px;
-    }
-
     .contact-form-info {
         width: 43%;
         margin-left: 14%;
@@ -1562,6 +1605,10 @@ a.social-icon-noncolor:hover {
         margin-left: 5%;
         margin-right: 11%;
     }
+
+    #footer-section {
+        margin-top: 20px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -1571,7 +1618,7 @@ a.social-icon-noncolor:hover {
 
     .collapse>ul {
         margin-top: 11px !important;
-        padding-left: 40px !important;
+        padding-left: 35px !important;
         text-align: center;
     }
 
@@ -1613,11 +1660,40 @@ a.social-icon-noncolor:hover {
     .horizontal-carousel-container {
         padding-left: 57px;
     }
+
+    .tabs-product-details {
+        margin-left: 21px;
+    }
+
+    .tabcontent p {
+        text-align: left;
+    }
+
+    .col-sm-4.header-section-subtitle {
+        width: 100% !important;
+    }
+
+    .contact-info ul {
+        width: auto;
+    }
 }
 
-@media screen and (min-width: 320px) and (max-width: 510px) {
+
+@media (min-width:550px) {
+    
+    #products-submenu{
+        margin-top: 11px !important;
+    }
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 765px) {
     .logo {
         font-size: 100px;
+    }
+
+    .collapse>ul {
+        padding-left: 25px !important;
     }
 
     .contact-form-info {
@@ -1646,15 +1722,13 @@ a.social-icon-noncolor:hover {
     }
 
     #products-submenu {
-        margin-right: 83px !important;
-        margin-left: 57px !important;
         display: none;
     }
 
     #deserts-submenu {}
 
     a#navbarDropdownDesserts,
-    a#navbarDropdownDesserts {
+    a#navbarDropdown {
         margin-left: 11px;
         text-transform: uppercase;
     }
@@ -1700,9 +1774,13 @@ a.social-icon-noncolor:hover {
         padding-left: 29px;
     }
 
-    .tabcontent {
-        margin: 0;
-        margin-left: 21px;
+    .tabs-product-details {
+        margin-left: 8px;
+    }
+
+    .tabcontent p {
+        text-align: left;
+        margin-left: 5px;
     }
 
     .info-product-details {
@@ -1715,13 +1793,46 @@ a.social-icon-noncolor:hover {
         margin-right: 21px;
     }
 
-    .header-section-subtitle>.carousel-caption-description  {
+    .header-section-subtitle>.carousel-caption-description {
         font-size: 22px !important;
         text-align: center;
     }
 
     .grid-img-position {
         margin-left: 24px;
+    }
+
+    .col-sm-4,
+    .header-section-subtitle {
+        width: 99% !important;
+    }
+
+    .info-product-details,
+    .col-sm-2 {
+        width: auto !important;
+    }
+}
+
+@media (max-width: 575px) {
+    .nav-link {
+        display: block;
+    }
+
+    .navbar-nav.me-auto.mb-lg-0 {
+        padding-left: 41px !important;
+    }
+
+    .dropend .dropdown-toggle::after {
+        top: 8px;
+    }
+
+    .nav-item.dropend {
+        height: 17px;
+    }
+
+    #navbarDropdownDesserts, #navbarDropdown {
+        vertical-align: middle !important;
+        line-height: 5px;
     }
 }
 
