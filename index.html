@@ -25,7 +25,7 @@
 </head>
 
 <body id="eisbergPage" data-spy="scroll" data-target=".navbar" data-offset="60">
-  
+
   <!-- Social icons bar -->
   <div class="social-icon-bar" id="socialIconBar" style="display: none;">
     <a href="https://www.facebook.com/EisbergGelato" target="_blank" class="social-icon-color" id="facebook">
@@ -76,10 +76,13 @@
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="produse.html" id="navbarDropdownProducts" role="link"
-              data-bs-toggle="dropdown" aria-expanded="false">PRODUSE <i class="arrow down" id="navbarDropdownProducts"></i></a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdownProducts" id="products-submenu" style="width: 201px;">
+              data-bs-toggle="dropdown" aria-expanded="false">PRODUSE <i class="arrow down"
+                id="navbarDropdownProducts"></i></a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownProducts" id="products-submenu"
+              style="width: 201px;">
               <li class="nav-item dropend">
-                <a class="nav-link dropdown-toggle" href="../deserturi/deserturi.html" id="navbarDropdownDesserts" role="link" data-bs-toggle="dropdown" aria-expanded="false">DESERTURI</a>
+                <a class="nav-link dropdown-toggle" href="../deserturi/deserturi.html" id="navbarDropdownDesserts"
+                  role="link" data-bs-toggle="dropdown" aria-expanded="false">DESERTURI</a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownDesserts" id="deserts-submenu">
                   <li><a class="dropdown-item" href="/produse/deserturi/monoportii/monoportii.html">Monoporții</a></li>
                   <li>
@@ -152,18 +155,15 @@
           <div class="carousel-item active">
             <div class="carousel-item-background"></div>
 
-            <img src=".\Images\fruttini-exotic-collage.png" class="d-block w-100 carousel-img" alt="...">
+            <img src=".\Images\fruttini-exotic-collage-ro.png" class="d-block w-100 carousel-img" alt="...">
 
-            <div class="d-md-block"
-              style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); border: 5px solid #fff; padding: 10px; z-index: 2;">
-              <p class="carousel-caption-description-adjective" style="color: #fff; text-align: center;">gustoasele</p>
-              <h1 style="color: #fff; text-align: center;">DESERTURI EISBERG</h1>
-              <p class="carousel-caption-description" style="color: #fff; text-align: center;">O înghețată în strat, un
+            <div class="carousel-caption d-md-block">
+              <p class="carousel-caption-description-adjective">gustoasele</p>
+              <h1>DESERTURI EISBERG</h1>
+              <p class="carousel-caption-description">O înghețată în strat, un
                 dulce semi-fredo, un desert gata preparat ce poate fi servit după încălzire sau imediat și pentru care
                 bucătarul tău nu va trebui să muncească mai mult.</p>
-              <div style="text-align: center;">
-                <button class="carousel-caption-btn">DESCOPERĂ PRODUSELE</button>
-              </div>
+              <button class="carousel-caption-btn">DESCOPERĂ PRODUSELE</button>
             </div>
           </div>
 
@@ -243,8 +243,7 @@
     <!-- Mini meniu -->
     <div class="row row-cols-auto" style="width: inherit;" id="mini-menu">
       <div class="col-md-4 img-gallery reveal fade-left">
-        <div class="card"
-          style="background: linear-gradient(180deg, rgba(255,67,102,0.05646008403361347) 0%, rgba(220,48,48,0) 100%);"
+        <div class="card" style="background-image: url('./Images/background-mini-menu.png')"
           onmouseover="document.querySelector('.deserts-img-menu').src='./Images/eisberg-gelato-deserturi-detail.png';"
           onmouseout="document.querySelector('.deserts-img-menu').src='./Images/eisberg-gelato-deserturi.png';">
           <img src=".\Images\eisberg-gelato-deserturi.png" class="deserts-img-menu img-responsive"
@@ -256,8 +255,7 @@
       </div>
 
       <div class="col-md-4 img-gallery reveal fade-in">
-        <div class="card"
-          style="background: linear-gradient(180deg, rgba(255,67,102,0.05646008403361347) 0%, rgba(220,48,48,0) 100%);"
+        <div class="card" style="background-image: url('./Images/background-mini-menu.png')"
           onmouseover="document.querySelector('.eiscream-img-menu').src='./Images/eisberg-gelato-inghetata-detail.png';"
           onmouseout="document.querySelector('.eiscream-img-menu').src='./Images/eisberg-gelato-inghetata.png';">
           <img src=".\Images\eisberg-gelato-inghetata.png" class="eiscream-img-menu img-responsive"
@@ -269,8 +267,7 @@
       </div>
 
       <div class="col-md-4 img-gallery reveal fade-right">
-        <div class="card"
-          style="background: linear-gradient(180deg, rgba(255,67,102,0.05646008403361347) 0%, rgba(220,48,48,0) 100%);"
+        <div class="card" style="background-image: url('./Images/background-mini-menu.png')"
           onmouseover="document.querySelector('.fruttini-img-menu').src='./Images/eisberg-gelato-smoothie_detail.png';"
           onmouseout="document.querySelector('.fruttini-img-menu').src='./Images/eisberg-gelato-smoothie.png';">
           <img src=".\Images\eisberg-gelato-smoothie.png" class="fruttini-img-menu img-responsive"
@@ -290,51 +287,85 @@
       </div>
 
       <div class="row reveal fade-in justify-content-center" style="margin: auto;">
-        <h2 class="center-element" id="various-desserts-title" style="font-family: 'Roboto'; color: #303030;">CELE MAI VANDUTE PRODUSE</h2>
+        <h2 class="center-element" id="various-desserts-title" style="font-family: 'Roboto'; color: #303030;">CELE MAI
+          VANDUTE PRODUSE</h2>
       </div>
 
       <div class="row mini-menu" style="margin: auto;">
-        <div class="col-sm-4 reveal fade-left" style="text-align: right;">
-          <div class="row">
-            <h3 style="font-family: 'Roboto'; color: #303030;">Sorbet de Lămâie</h3>
-            <p>Suntem singurii producători din România de înghețată în carcase de fructe naturale</p>
-          </div>
-          <div class="row">
-            <h3 style="font-family: 'Roboto'; color: #303030;">Mousse De Căpșuni</h3>
-            <p>O prăjitură răcoritoare, cu gust delicat de căpșuni, acompaniat de un blat crocant de biscuiți cu cacao
-            </p>
-          </div>
-          <div class="row">
-            <h3 style="font-family: 'Roboto'; color: #303030;">Mousse Bianco</h3>
-            <p>O combinație surprinzătoare cu blat de biscuiți, cremă de ciocolată albă și caramel cu alune</p>
-          </div>
-        </div>
 
-        <div class="col-sm-4 reveal fade-in center-element">
-          <img src=".\Images\iaurt-cirese-min.png" alt="Iaurt cirese min" id="mini-menu-center-img" />
-        </div>
+        <div class="center-element">
+          <!-- Carousel new/best seller products  -->
+          <div class="container carousel-container">
+            <!-- Left Indicators -->
+            <div class="indicators me-4 reveal fade-left">
+              <div data-bs-target="#mini-menu-carousel" data-bs-slide-to="0" class="indicator active right-text-align">
+                <h3 class="various-desserts-presentation-title">Sorbet de Lămâie</h3>
+                <p class="various-desserts-presentation-details">Suntem singurii producători din România de înghețată în carcase de fructe naturale</p>
+              </div>
 
-        <div class="col-sm-4 reveal fade-right">
-          <div class="row">
-            <h3 class="various-desserts-presentation-title">Smoothie Forest Breeze</h3>
-            <p>Căpșuni, vișine, coacăze roșii, mure + suc de mere</p>
-          </div>
-          <br>
-          <div class="row">
-            <h3 class="various-desserts-presentation-title">Tiramisu</h3>
-            <p> Faimosul desert italian ce combină crema fină din mascarpone, cu blatul plin de gustul unui espresso
-            </p>
-          </div>
-          <div class="row">
-            <h3 class="various-desserts-presentation-title">Lava Cake</h3>
-            <p>Un blat dens, semiumed de cacao, ce învelește o inimă fierbinte din cea mai fină ciocolată</p>
+              <div data-bs-target="#mini-menu-carousel" data-bs-slide-to="1" class="indicator right-text-align">
+                <h3 class="various-desserts-presentation-title">Mousse De Căpșuni</h3>
+                <p class="various-desserts-presentation-details">O prăjitură răcoritoare, cu gust delicat de căpșuni, acompaniat de un blat crocant de biscuiți cu
+                  cacao
+                </p>
+              </div>
+              <div data-bs-target="#mini-menu-carousel" data-bs-slide-to="2" class="indicator right-text-align">
+                <h3 class="various-desserts-presentation-title">Mousse Bianco</h3>
+                <p class="various-desserts-presentation-details">O combinație surprinzătoare cu blat de biscuiți, cremă de ciocolată albă și caramel cu alune</p>
+              </div>
+            </div>
+
+            <!-- Carousel images -->
+            <div id="mini-menu-carousel" class="carousel slide reveal fade-in" data-bs-ride="carousel">
+              <div class="carousel-inner" style="width: 500px !important;">
+                <div class="carousel-item active">
+                  <img src="\Images\sorbet-lamaie.png" class="d-block" alt="sorbet lamaie"
+                    style="width:250px; height: 350px; max-width:400px !important;">
+                </div>
+                <div class="carousel-item">
+                  <img src=".\Images\strawberry_mousse.png" class="d-block" alt="strawberry mousse"
+                    style="width:auto; max-width:400px !important; margin: auto;">
+                </div>
+                <div class="carousel-item">
+                  <img src=".\Images\mousse_bianco.png" class="d-block" alt="mousse bianco"
+                    style="width:auto; max-width:400px !important; margin: auto;">
+                </div>
+                <div class="carousel-item">
+                  <img src=".\Images\eisberg-gelato-smoothie.png" class="d-block" alt="Image 4"
+                    style="width:auto; max-width:400px !important; margin: auto;">
+                </div>
+                <div class="carousel-item">
+                  <img src=".\Images\tiramisu.png" class="d-block" alt="Image 5"
+                    style="width:300px; height: 350px; max-width:400px !important; ">
+                </div>
+                <div class="carousel-item">
+                  <img src=".\Images\lava_cake.png" class="d-block" alt="Image 6"
+                    style="width:auto; max-width:400px !important; margin: auto;">
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Indicators -->
+            <div class="indicators ms-4 reveal fade-right">
+              <div data-bs-target="#mini-menu-carousel" data-bs-slide-to="3" class="indicator left-text-align">
+                <h3 class="various-desserts-presentation-title" >Smoothie Forest Breeze</h3>
+                <p class="various-desserts-presentation-details">Căpșuni, vișine, coacăze roșii, mure + suc de mere</p>
+              </div>
+
+              <div data-bs-target="#mini-menu-carousel" data-bs-slide-to="4" class="indicator left-text-align">
+                <h3 class="various-desserts-presentation-title">Tiramisu</h3>
+                <p class="various-desserts-presentation-details"> Faimosul desert italian ce combină crema fină din mascarpone, cu blatul plin de gustul unui espresso
+                </p>
+              </div>
+
+              <div data-bs-target="#mini-menu-carousel" data-bs-slide-to="5" class="indicator left-text-align">
+                <h3 class="various-desserts-presentation-title">Lava Cake</h3>
+                <p class="various-desserts-presentation-details">Un blat dens, semiumed de cacao, ce învelește o inimă fierbinte din cea mai fină ciocolată</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-
-    <div class="row" style="width: 100%">
-      <br><br>
     </div>
 
     <!-- Horizontal carousel -->
@@ -457,8 +488,7 @@
     </div>
 
     <!-- Footer -->
-    <footer class="container-fluid text-center"
-       id="footer-section">
+    <footer class="container-fluid text-center" id="footer-section">
       <div class="row center-element wrapper-footer-meniu" style="padding-top: 37px;">
         <div class="col-md-3">
           <img src=".\Images\logo-white.png" width="100" height="50" id="footer-img-logo">
@@ -524,6 +554,28 @@
 
     <script>
       $(document).ready(function () {
+
+        function updateActiveIndicator() {
+          let activeItem = document.querySelector('#mini-menu-carousel .carousel-inner .active');
+          if (!activeItem) return; // Ensure active item exists
+
+          let index = [...activeItem.parentNode.children].indexOf(activeItem);
+
+          document.querySelectorAll('.indicator').forEach(i => i.classList.remove('active'));
+          if (document.querySelectorAll('.indicator')[index]) {
+            document.querySelectorAll('.indicator')[index].classList.add('active');
+          }
+        }
+
+        document.querySelectorAll('.indicator').forEach(indicator => {
+          indicator.addEventListener('click', function () {
+            document.querySelectorAll('.indicator').forEach(i => i.classList.remove('active'));
+            this.classList.add('active');
+          });
+        });
+
+        document.getElementById('mini-menu-carousel').addEventListener('slid.bs.carousel', updateActiveIndicator);
+
         // Add smooth scrolling to all links in navbar + footer link
         $(".navbar a, footer a[href='#eisbergPage']").on('click', function (event) {
           // Make sure this.hash has a value before overriding default behavior
