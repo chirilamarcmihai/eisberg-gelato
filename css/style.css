@@ -451,7 +451,7 @@ h4 {
 }
 
 .banner-section {
-    height: 500px;
+    height: 570px;
     margin-right: 0 !important;
     margin-left: 0 !important;
 }
@@ -461,8 +461,7 @@ h4 {
     height: 100% !important;
     object-fit: cover;
     padding: 0;
-    /* object-position: 17% 29%; */
-    object-view-box: inset(23% 0% 35% 0%);
+    object-view-box: inset(1% 1% 7% 0%);
 }
 
 figure {
@@ -925,6 +924,11 @@ ul.breadcrumb li a:hover {
 footer div a {
     color: #fff;
     text-decoration: none;
+}
+
+footer div a:hover {
+    color: #fff;
+    font-weight: bold;
 }
 
 /***************** Scroll reveal animation *********************/
