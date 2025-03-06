@@ -66,7 +66,7 @@ h4 {
 }
 
 .mini-menu {
-    width: 70%;
+    width: 91%;
 }
 
 * {
@@ -1161,8 +1161,7 @@ a.social-icon-noncolor:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(77, 77, 77, 0.397);
-
+    background: #22020230; /* rgba(77, 77, 77, 0.387); */
     z-index: 1;
 }
 
@@ -1205,6 +1204,10 @@ a.social-icon-noncolor:hover {
     display: initial;
 }
 
+.doubled-text {
+    text-shadow: 3px 3px 5px #434040;
+}
+
 .carousel-indicators button {
     background-color: #f53323 !important;
 }
@@ -1213,7 +1216,7 @@ a.social-icon-noncolor:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 843%;
+    width: 83%;
     margin: 0 auto;
 }
 
@@ -1228,9 +1231,31 @@ a.social-icon-noncolor:hover {
     text-align: center;
 }
 
-.indicator.active h3 {
-    text-decoration: red underline;
+
+.indicator h3 {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
 }
+
+.indicator h3::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: red;
+    transition: width 0.4s ease-out, left 0.4s ease-out;
+    transform: translateX(-50%);
+}
+
+.indicator.active h3::after {
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 
 div#mini-menu-carousel .carousel-inner img {
     top: 50%;
@@ -1242,11 +1267,11 @@ div#mini-menu-carousel .carousel-inner img {
     .carousel-container {
         flex-direction: column;
         align-items: center;
-        text-align: center;
+        text-align: center !important;
     }
 
     .indicators {
-        flex-direction: row;
+        text-align: center !important;
         justify-content: center;
         margin-bottom: 10px;
     }
@@ -1467,7 +1492,7 @@ div#mini-menu-carousel .carousel-inner img {
     font-size: 0.9rem;
     line-height: 1.4;
     margin-top: 0.5rem;
-    color: #333
+    color: #918E8B
 }
 
 .contact-title {
@@ -1591,11 +1616,6 @@ div#mini-menu-carousel .carousel-inner img {
         font-size: 14px;
     }
 
-    .mini-menu h3,
-    p {
-        text-align: left;
-    }
-
     .horizontal-carousel-container {
         padding-left: 101px;
     }
@@ -1674,7 +1694,7 @@ div#mini-menu-carousel .carousel-inner img {
         width: 43%;
         margin-left: 14%;
     }
-    
+
     .horizontal-carousel img {
         width: 100px;
         height: 100px;
@@ -1687,7 +1707,7 @@ div#mini-menu-carousel .carousel-inner img {
     }
 
     #footer-section {
-        margin-top: 73px;
+        margin-top: 7px;
     }
 }
 
