@@ -464,7 +464,7 @@ h4 {
 
 figure {
     margin: 0;
-    padding: 4px;
+    /* padding: 4px; */
     justify-content: center !important;
     display: grid;
 }
@@ -505,7 +505,12 @@ figcaption {
 
 .img-presentation-grid {
     width: 250px;
-    height: 170px;
+    height: 161px;
+}
+
+
+.img-vasc-presentation-grid {
+    height: 161px;
 }
 
 .navbar {
@@ -905,12 +910,12 @@ ul.breadcrumb li a:hover {
 }
 
 .contact-form button {
-    background-color: #e4002b;
+    background-color: #ee3124;
     border: none;
 }
 
 #send-email-btn:hover {
-    background-color: #e64236;
+    background-color: #ca3f35;
 }
 
 
@@ -1568,11 +1573,24 @@ div#mini-menu-carousel .carousel-inner img {
     margin: auto;
 }
 
+.row.tabs-product-details {
+    max-width: 700px;
+}
+
+.go-to-product {
+    text-decoration: none;
+}
+
+.go-to-product:hover {
+    text-decoration: underline !important;
+    color: #ee3124 !important;
+}
+
 /********** Media ***************/
 
 @media (min-width: 1024px) {
     .info-product-details {
-        max-width: 1200px;
+        max-width: 700px;
     }
 
     .info-product-details .row.row-cols-auto>.col-sm-3 {
@@ -1580,7 +1598,7 @@ div#mini-menu-carousel .carousel-inner img {
     }
 
     .col-sm-4.header-section-subtitle {
-        width: auto;
+        /* width: auto; */
     }
 
     .info-product-details .row.row-cols-auto>.col-sm-2 {
@@ -1588,8 +1606,8 @@ div#mini-menu-carousel .carousel-inner img {
     }
 
     .figure-section {
-        width: 260px;
-        height: 231px;
+        width: 241px;
+        height: 241px;
     }
 }
 
@@ -1721,7 +1739,7 @@ div#mini-menu-carousel .carousel-inner img {
     }
 
     #footer-section {
-       margin-top: 17px;
+        margin-top: 17px;
     }
 }
 
@@ -1792,6 +1810,12 @@ div#mini-menu-carousel .carousel-inner img {
     }
 }
 
+@media (min-width: 576px) {
+    .col-sm-3 {
+        flex: 0 0 auto;
+        width: 26%;
+    }
+}
 
 @media (min-width:550px) {
 
@@ -1891,6 +1915,7 @@ div#mini-menu-carousel .carousel-inner img {
         height: auto;
         margin-left: 21px;
         margin-right: 21px;
+        max-width: 700px;
     }
 
     .tabs-product-details {
