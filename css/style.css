@@ -504,10 +504,14 @@ figcaption {
 }
 
 .img-presentation-grid {
-    width: 250px;
     height: 161px;
+    object-fit: cover;
 }
 
+.img-fruttini-presentation-grid {
+    height: 200px;
+    object-fit: cover;
+}
 
 .img-vasc-presentation-grid {
     height: 161px;
@@ -733,6 +737,19 @@ figure a {
 /* Hide the images by default */
 .productImgSlides {
     display: none;
+    margin-top: 70px;
+    margin-right: 70px;
+}
+
+.productImgPresentation {
+    width: 350px;
+    height: 335px;
+    object-fit: cover;
+}
+
+.furttiniProductImgPresentation {
+    height: 335px;
+    object-fit: cover;
 }
 
 /* Add a pointer when hovering over the thumbnail images */
@@ -1895,6 +1912,7 @@ div#mini-menu-carousel .carousel-inner img {
     .img-presentation-grid {
         width: auto;
         height: 119px;
+        object-fit: cover;
     }
 
     .tab {
