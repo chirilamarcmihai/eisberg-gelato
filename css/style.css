@@ -101,7 +101,7 @@ h4 {
 
 /* Create an active/current tablink class */
 .tab button.active {
-    border-bottom: 1px solid #f53323;
+    border-bottom: 1px solid #a7261b;
     color: #f53323;
 }
 
@@ -117,6 +117,54 @@ h4 {
     font-weight: 600;
 }
 
+
+/*********** Vertical Tabs *****************/
+
+/* Style the tab */
+.vertical-tab {
+    float: left;
+    border: 1px solid #ccc;
+    background-color: #ee3124;
+    width: 35%;
+    height: 700px;
+}
+
+/* Style the buttons inside the tab */
+.vertical-tablinks {
+    display: block;
+    background-color: inherit;
+    color: #fff;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.vertical-tablinks:hover {
+    background-color: #f55e51;
+}
+
+/* Create an active/current "tab button" class */
+.vertical-tablinks.active {
+    background-color: #a7261b;
+}
+
+/* Style the tab content */
+.vertical-tabcontent {
+    float: left;
+    padding: 70px 12px;
+    border: 1px solid #ccc;
+    width: 65%;
+    border-left: none;
+    height: 700px;
+}
+
+/*****************************************/
 /*************************************/
 
 
@@ -506,6 +554,8 @@ figcaption {
 .img-presentation-grid {
     height: 161px;
     object-fit: cover;
+    margin: auto;
+    display: block;
 }
 
 .img-fruttini-presentation-grid {
@@ -744,7 +794,7 @@ figure a {
 .productImgPresentation {
     width: 350px;
     height: 335px;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .furttiniProductImgPresentation {
@@ -1563,7 +1613,6 @@ div#mini-menu-carousel .carousel-inner img {
 #footer-section {
     width: 100%;
     margin: 0;
-    margin-top: 17px;
     background-color: #fb3521;
     background-image: linear-gradient(1deg, #971e129e, #fb3521);
     color: #fff;
@@ -1753,11 +1802,7 @@ div#mini-menu-carousel .carousel-inner img {
 
     .row.center-element {
         margin-right: 11%;
-    }
-
-    #footer-section {
-        margin-top: 17px;
-    }
+    }   
 }
 
 @media (max-width: 768px) {
