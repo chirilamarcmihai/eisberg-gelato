@@ -101,7 +101,7 @@ h4 {
 
 /* Create an active/current tablink class */
 .tab button.active {
-    border-bottom: 1px solid #a7261b;
+    border-bottom: 1px solid #f53323;
     color: #f53323;
 }
 
@@ -524,7 +524,7 @@ figcaption {
 
 .figure-section {
     width: 250px;
-    height: 219px;
+    height: 291px;
 }
 
 .figure-section:hover {
@@ -558,9 +558,25 @@ figcaption {
     display: block;
 }
 
-.img-fruttini-presentation-grid {
-    height: 200px;
+.img-single-serving-presentation-grid {
+    height: 183px;
     object-fit: cover;
+    margin: auto;
+    display: block;
+}
+
+.img-single-serving-ice-cream-presentation-grid {
+    height: 183px;
+    object-fit: cover;
+    margin: auto;
+    display: block;
+}
+
+.img-fruttini-presentation-grid {
+    height: 211px;
+    object-fit: cover;
+    margin: auto;
+    display: block;
 }
 
 .img-vasc-presentation-grid {
@@ -1673,7 +1689,7 @@ div#mini-menu-carousel .carousel-inner img {
 
     .figure-section {
         width: 241px;
-        height: 241px;
+        height: 311px;
     }
 }
 
@@ -1802,7 +1818,7 @@ div#mini-menu-carousel .carousel-inner img {
 
     .row.center-element {
         margin-right: 11%;
-    }   
+    }
 }
 
 @media (max-width: 768px) {
@@ -1956,7 +1972,7 @@ div#mini-menu-carousel .carousel-inner img {
 
     .img-presentation-grid {
         width: auto;
-        height: 119px;
+        height: 161px;
         object-fit: cover;
     }
 
