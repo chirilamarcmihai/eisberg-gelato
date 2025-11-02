@@ -535,6 +535,10 @@ figcaption {
     color: #e9071e;
 }
 
+.presentation-lg-img-fit {
+    object-position: top -411px right 0px;
+}
+
 .header-section-title {
     margin-top: 40px;
 }
