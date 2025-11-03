@@ -1709,6 +1709,10 @@ div#mini-menu-carousel .carousel-inner img {
     color: #ee3124 !important;
 }
 
+.grid-space-products {
+    margin-top: 70px;
+    gap: 31px;
+}
 /********** Media ***************/
 @media (max-width: 1512px) {
     .carousel-row {
@@ -1741,7 +1745,7 @@ div#mini-menu-carousel .carousel-inner img {
 
     .figure-section {
         width: 241px;
-        height: 311px;
+        height: 241px;
     }
 }
 
