@@ -52,9 +52,9 @@
   </div>
 
   <!-- Jumbotron logo -->
-  <div class="jumbotron text-center inner clearfix">
+  <div class="jumbotron clearfix">
     <a href="index.html">
-      <img src="/Images/logo-eisberg.png" width="170" height="50">
+      <img src="/Images/logo-eisberg.png" id="jubotron-img-logo" alt="Eisberg">
     </a>
   </div>
 
@@ -69,7 +69,7 @@
       <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="../../../index.html">ACASA</a>
+            <a class="nav-link active" aria-current="page" href="/index.html">ACASA</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#about">DESPRE NOI</a>
@@ -154,8 +154,7 @@
 
           <div class="carousel-item active">
             <div class="carousel-item-background"></div>
-
-            <img src="./Images/pistachio-dome-slider.png" class="d-block w-100 carousel-img presentation-lg-img-fit " alt="Pistachio dome">
+            <img src="./Images/pistachio-dome-slider.png" class="d-block w-100 carousel-img presentation-lg-img-fit" alt="Pistachio dome">
             <div class="carousel-caption d-md-block">
               <p class="carousel-caption-description-adjective doubled-text">gustoasele</p>
               <h1 class="doubled-text">DESERTURI EISBERG</h1>
@@ -176,7 +175,6 @@
 
           <div class="carousel-item">
             <div class="carousel-item-background"></div>
-
             <img src="/Images/carrot-cake-presentation.png" class="d-block w-100 carousel-img presentation-lg-img-fit " alt="Carrot cake">
             <div class="carousel-caption d-md-block">
               <p class="carousel-caption-description-adjective doubled-text">delicioasele</p>
@@ -187,7 +185,6 @@
 
           <div class="carousel-item">
             <div class="carousel-item-background"></div>
-
             <img src="./Images/fruttini-exotic-pink-collage.png" class="d-block w-100 carousel-img" alt="Fruttini exotic pink">
             <div class="carousel-caption d-md-block">
               <p class="carousel-caption-description-adjective doubled-text">răcoritoarele</p>
@@ -216,7 +213,7 @@
         <div class="wrapper-about-company">
           <div class="col-sm-4">
             <div class="row">
-              <h1 class="h-title">Despre Eisberg</h1>
+              <h1 class="h-title h-title-double-text">Despre Eisberg</h1>
               <h4 class="h-subtitle">DESPRE NOI</h4>
             </div>
             <p>Eisberg oferă domeniului HoReCa dulcele regăsit în gelateriile sau pasticceriile autentice.</p>
@@ -227,7 +224,7 @@
               separat.</p>
           </div>
           <div class="col-sm-4">
-            <img src="/Images/baileys_dome_presentation.png">
+            <img src="/Images/baileys_dome_presentation.png" class="img-about-company" alt="Baileys dome">
           </div>
         </div>
       </div>
@@ -236,11 +233,11 @@
       <div class="row">
         <div class="wrapper-about-company">
           <div class="col-sm-4">
-            <img src="/Images/crocantino_presentation.png">
+            <img src="/Images/crocantino_presentation.png" class="img-about-company" alt="Crocantino">
           </div>
           <div class="col-sm-4">
             <div class="row">
-              <h1 class="h-title">Viziunea Eisberg</h1>
+              <h1 class="h-title h-title-double-text">Viziunea Eisberg</h1>
               <h4 class="h-subtitle">VIZIUNEA NOASTRĂ</h4>
               <p>Punem experiența clienților noștri în lumea deserturilor pe primul loc, iar asta ne îndeamnă să lucrăm
                 cu entuziasm.</p>
@@ -255,49 +252,46 @@
     </div>
 
     <!-- Categories meniu -->
-    <div class="row row-cols-auto" style="width: inherit;" id="mini-menu">
+    <div class="row row-cols-auto" style="width: inherit; margin-top: 101px;" id="mini-menu">
       <div class="col-md-4 img-gallery reveal fade-left">
         <div class="card" style="background-image: url('./Images/background-mini-menu.png')"
-          onmouseover="document.querySelector('.deserts-img-menu').src='./Images/eisberg-gelato-deserturi-detail.png';"
-          onmouseout="document.querySelector('.deserts-img-menu').src='./Images/eisberg-gelato-deserturi.png';">
-          <img src="/Images/yogo-rubi.png" class="deserts-img-menu img-responsive"
-            style="width:50%; margin:auto;" alt="Image">
+          onmouseover="document.querySelector('.deserts-img-menu').src='/Images/yogo_rubi_hover_menu.png';"
+          onmouseout="document.querySelector('.deserts-img-menu').src='/Images/yogo-rubi_menu.png';">
+          <img src="/Images/yogo-rubi_menu.png" class="categoires-menu deserts-img-menu img-responsive" alt="Yogo rubi">
         </div>
         <button class="btn-gallery"
-          onmouseover="document.querySelector('.deserts-img-menu').src='./Images/eisberg-gelato-deserturi-detail.png';"
-          onmouseout="document.querySelector('.deserts-img-menu').src='./Images/eisberg-gelato-deserturi.png';">DESERTURI</button>
+          onmouseover="document.querySelector('.deserts-img-menu').src='/Images/yogo_rubi_hover_menu.png';"
+          onmouseout="document.querySelector('.deserts-img-menu').src='/Images/yogo-rubi_menu.png';">DESERTURI</button>
       </div>
 
       <div class="col-md-4 img-gallery reveal fade-in">
         <div class="card" style="background-image: url('./Images/background-mini-menu.png')"
-          onmouseover="document.querySelector('.eiscream-img-menu').src='./Images/eisberg-gelato-inghetata-detail.png';"
-          onmouseout="document.querySelector('.eiscream-img-menu').src='./Images/eisberg-gelato-inghetata.png';">
-          <img src="/Images/eisberg-gelato-inghetata.png" class="eiscream-img-menu img-responsive"
-            style="width:50%; margin:auto;" alt="Image">
+          onmouseover="document.querySelector('.eiscream-img-menu').src='./Images/pear_yogurt_hover_menu.png';"
+          onmouseout="document.querySelector('.eiscream-img-menu').src='./Images/pear_yogurt_menu.png';">
+          <img src="/Images/pear_yogurt_menu.png" class="categoires-menu eiscream-img-menu img-responsive" alt="Image">
         </div>
         <button class="btn-gallery"
-          onmouseover="document.querySelector('.eiscream-img-menu').src='./Images/eisberg-gelato-inghetata-detail.png';"
-          onmouseout="document.querySelector('.eiscream-img-menu').src='./Images/eisberg-gelato-inghetata.png';">ÎNGHEȚATĂ</button>
+          onmouseover="document.querySelector('.eiscream-img-menu').src='./Images/pear_yogurt_hover_menu.png';"
+          onmouseout="document.querySelector('.eiscream-img-menu').src='./Images/pear_yogurt_menu.png';">ÎNGHEȚATĂ</button>
       </div>
 
       <div class="col-md-4 img-gallery reveal fade-right">
         <div class="card" style="background-image: url('./Images/background-mini-menu.png')"
-          onmouseover="document.querySelector('.fruttini-img-menu').src='./Images/eisberg-gelato-smoothie_detail.png';"
-          onmouseout="document.querySelector('.fruttini-img-menu').src='./Images/eisberg-gelato-smoothie.png';">
-          <img src="/Images/eisberg-gelato-smoothie.png" class="fruttini-img-menu img-responsive"
-            style="width:50%; margin:auto;" alt="Image">
+          onmouseover="document.querySelector('.fruttini-img-menu').src='./Images/detox_vibe_menu_hover.png';"
+          onmouseout="document.querySelector('.fruttini-img-menu').src='./Images/detox_vibe_menu.png';">
+          <img src="/Images/detox_vibe_menu.png" class="categoires-menu fruttini-img-menu img-responsive" alt="Detox vibe">
         </div>
         <button class="btn-gallery"
-          onmouseover="document.querySelector('.fruttini-img-menu').src='./Images/eisberg-gelato-smoothie_detail.png';"
-          onmouseout="document.querySelector('.fruttini-img-menu').src='./Images/eisberg-gelato-smoothie.png';">FRUTTINI
+          onmouseover="document.querySelector('.fruttini-img-menu').src='./Images/detox_vibe_menu_hover.png';"
+          onmouseout="document.querySelector('.fruttini-img-menu').src='./Images/detox_vibe_menu.png';">FRUTTINI
           SMOOTHIES</button>
       </div>
     </div>
 
     <!-- Various desserts carousel -->
-    <div class="row justify-content-center" style="width: inherit; margin-top: 73px;">
+    <div class="row justify-content-center" style="width: inherit; margin-top: 101px;">
       <div class="row reveal fade-in justify-content-center" style="margin: auto;">
-        <p class="center-element" style="font-family: 'Ms Madi'; font-size: 37px; color: #f43121;">încearcă ceva nou</p>
+        <p class="center-element" style="font-family: 'Ms Madi'; font-size: 43px; color: #f43121; ">încearcă ceva nou</p>
       </div>
 
       <div class="row reveal fade-in justify-content-center" style="margin: auto;">
@@ -314,7 +308,7 @@
             <!-- Left Indicators -->
             <div class="indicators me-5 reveal fade-left">
               <div data-bs-target="#mini-menu-carousel" data-bs-slide-to="0" class="indicator active right-text-align">
-                <h3 class="various-desserts-presentation-title highlight-product-title">Sorbet de Lămâie</h3>
+                <h3 class="various-desserts-presentation-title highlight-product-title">Lava cake</h3>
                 <a href="#" style="text-decoration: none;">
                   <p class="various-desserts-presentation-details go-to-product"> Mergi la produs <i
                       class="fas fa-angle-double-right"> </i></p>
@@ -322,7 +316,7 @@
               </div>
 
               <div data-bs-target="#mini-menu-carousel" data-bs-slide-to="1" class="indicator right-text-align">
-                <h3 class="various-desserts-presentation-title highlight-product-title">Mousse De Căpșuni</h3>
+                <h3 class="various-desserts-presentation-title highlight-product-title">Pistachio dome</h3>
 
                 <a href="#" style="text-decoration: none;">
                   <p class="various-desserts-presentation-details go-to-product"> Mergi la produs <i
@@ -331,7 +325,7 @@
               </div>
 
               <div data-bs-target="#mini-menu-carousel" data-bs-slide-to="2" class="indicator right-text-align">
-                <h3 class="various-desserts-presentation-title highlight-product-title">Mousse Bianco</h3>
+                <h3 class="various-desserts-presentation-title highlight-product-title">Înghețată în fruct lămâie</h3>
                 <a href="#" style="text-decoration: none;">
                   <p class="various-desserts-presentation-details go-to-product"> Mergi la produs <i
                       class="fas fa-angle-double-right"> </i></p>
@@ -343,28 +337,28 @@
             <div id="mini-menu-carousel" class="carousel slide reveal fade-in" data-bs-ride="carousel">
               <div class="carousel-inner" style="width: 500px !important;">
                 <div class="carousel-item active">
-                  <img src="/Images/sorbet-lamaie.png" class="d-block" alt="sorbet lamaie"
-                    style="width:250px; height: 350px; max-width:400px !important;">
+                  <img src="/Images/lava_cake.png" class="d-block" alt="sorbet lamaie"
+                    style="width:auto; max-width:400px !important; margin: auto; padding-left:7px">
                 </div>
                 <div class="carousel-item">
-                  <img src="/Images/strawberry_mousse.png" class="d-block" alt="strawberry mousse"
+                  <img src="/Images/pistachio_dome.png" class="d-block" alt="strawberry mousse"
                     style="width:auto; max-width:400px !important; margin: auto;">
                 </div>
                 <div class="carousel-item">
-                  <img src="/Images/mousse_bianco.png" class="d-block" alt="mousse bianco"
+                  <img src="/Images/sorbet-lamaie.png" class="d-block" alt="mousse bianco"
+                    style="width:250px; height: 350px; max-width:400px !important; padding-left:11px">
+                </div>
+                <div class="carousel-item">
+                  <img src="/Images/patrula_catelusilor.png" class="d-block" alt="Image 4"
                     style="width:auto; max-width:400px !important; margin: auto;">
                 </div>
                 <div class="carousel-item">
-                  <img src="/Images/eisberg-gelato-smoothie.png" class="d-block" alt="Image 4"
-                    style="width:auto; max-width:400px !important; margin: auto;">
+                  <img src="/Images/iaurt_cirese.png" class="d-block" alt="Image 5"
+                    style="width:auto; height: 400px; padding-left:41px">
                 </div>
                 <div class="carousel-item">
-                  <img src="/Images/tiramisu.png" class="d-block" alt="Image 5"
-                    style="width:300px; height: 350px; max-width:400px !important; ">
-                </div>
-                <div class="carousel-item">
-                  <img src="/Images/lava_cake.png" class="d-block" alt="Image 6"
-                    style="width:auto; max-width:400px !important; margin: auto;">
+                  <img src="/Images/forest_breeze.png" class="d-block" alt="Image 6"
+                    style="width:auto; margin: auto; height: 450px; padding-right: 61px;">
                 </div>
               </div>
             </div>
@@ -372,7 +366,7 @@
             <!-- Right Indicators -->
             <div class="indicators ms-5 reveal fade-right">
               <div data-bs-target="#mini-menu-carousel" data-bs-slide-to="3" class="indicator left-text-align">
-                <h3 class="various-desserts-presentation-title highlight-product-title">Smoothie Forest Breeze</h3>
+                <h3 class="various-desserts-presentation-title highlight-product-title">Patrula cățelușilor</h3>
 
                 <a href="#" style="text-decoration: none;">
                   <p class="various-desserts-presentation-details go-to-product"> Mergi la produs <i
@@ -381,7 +375,7 @@
               </div>
 
               <div data-bs-target="#mini-menu-carousel" data-bs-slide-to="4" class="indicator left-text-align">
-                <h3 class="various-desserts-presentation-title highlight-product-title">Tiramisu</h3>
+                <h3 class="various-desserts-presentation-title highlight-product-title">Ceramică cu iaurt și cireșe</h3>
 
                 <a href="#" style="text-decoration: none;">
                   <p class="various-desserts-presentation-details go-to-product"> Mergi la produs <i
@@ -390,7 +384,7 @@
               </div>
 
               <div data-bs-target="#mini-menu-carousel" data-bs-slide-to="5" class="indicator left-text-align">
-                <h3 class="various-desserts-presentation-title highlight-product-title">Lava Cake</h3>
+                <h3 class="various-desserts-presentation-title highlight-product-title">Fruttini forest breeze </h3>
 
                 <a href="#" style="text-decoration: none;">
                   <p class="various-desserts-presentation-details go-to-product"> Mergi la produs <i
@@ -427,12 +421,12 @@
       </div>
 
       <div class="row reveal fade-in justify-content-center row-contact">
-        <h2 class="center-element contact-title">Contact</h2>
+        <h2 class="center-element contact-title ">Contact</h2>
       </div>
 
       <div class="row reveal fade-in" style="position: relative;">
         <div class="col-md-5 contact-info contact-info-position">
-          <h3 class="contact-title-info">De ce Eisberg:</h3>
+          <h3 class="contact-title-info h-title-double-text">De ce Eisberg:</h3>
           <ul>
             <li>Ai materiile prime de cea mai bună calitate mereu, fără să treci tu prin procesul de
               achiziție</li>
@@ -442,8 +436,6 @@
               tale</li>
             <li>Ai produse care încântă ochii și pe care clienții tăi vor dori să le surprindă în fotografii
               sau să le expună pe social media (publicitate gratuită)</li>
-            <li>Lucrezi cu o echipă agilă, cu peste 1000 de clienți în domeniul HoReCa, care îți înțelege și
-              îți cunoaște durerile și provocările</li>
             <li>Primești meniuri personalizate cu brandul tău</li>
           </ul>
           <div class="contact-methods">

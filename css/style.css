@@ -12,7 +12,6 @@ h1 {
     text-transform: uppercase;
     color: #fff;
     font-weight: 600;
-    margin-bottom: 19px;
 }
 
 h2 {
@@ -20,7 +19,6 @@ h2 {
     text-transform: uppercase;
     color: #fff;
     font-weight: 600;
-    margin-bottom: 30px;
 }
 
 h4 {
@@ -207,12 +205,15 @@ h4 {
     align-items: center;
 }
 
+.img-about-company {
+    padding-top: 2em;
+}
 
 .wrapper-about-company .col-sm-4 {
-    width: 500px;
-    margin-top: 43px;
+    width: 525px;
+    margin-top: 51px;
     margin-bottom: 43px;
-    padding: 35px;
+    padding: 31px;
 }
 
 .center-element {
@@ -293,11 +294,19 @@ h4 {
 }
 
 .jumbotron {
-    background-color: #fff;
+
+    position: absolute;
+    background-color: transparent;
     color: #fff;
-    font-family: Montserrat, sans-serif;
     padding-top: 0;
     margin-bottom: 0px;
+    z-index: 10000;
+    margin-left: 70px;
+}
+
+#jubotron-img-logo {
+    width: 170px;
+    height: 70px;
 }
 
 .container-fluid {
@@ -330,6 +339,12 @@ h4 {
     margin-bottom: 10px;
 }
 
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    width: 3rem;
+    height: 3rem;
+}
+
 .carousel-caption-btn {
     --color: #fff;
     background-color: transparent;
@@ -340,7 +355,7 @@ h4 {
     line-height: 2.5em;
     overflow: hidden;
     cursor: pointer;
-    margin: 20px;
+    margin: 20px 0px;
     font-size: 17px;
     z-index: 1;
     width: 250px;
@@ -400,7 +415,7 @@ h4 {
 }
 
 .carousel-row {
-    height: 700px;
+    height: 819px;
     margin-right: -5px !important;
     margin-left: 0 !important;
 }
@@ -410,7 +425,7 @@ h4 {
 }
 
 .carousel-inner {
-    height: 700px;
+    height: 681px;
     overflow: hidden;
 }
 
@@ -536,7 +551,7 @@ figcaption {
 }
 
 .presentation-lg-img-fit {
-    object-position: top -411px right 0px;
+    object-position: top 70% right 0px;
 }
 
 .header-section-title {
@@ -545,6 +560,10 @@ figcaption {
 
 .header-section-subtitle {
     margin-bottom: 30px;
+}
+
+.h-title-double-text {
+    text-shadow: 2px 2px 4px #747475;
 }
 
 .header-section-subtitle>.carousel-caption-description {
@@ -597,6 +616,7 @@ figcaption {
     letter-spacing: 2px;
     border-radius: 0;
     font-family: Roboto, Montserrat, sans-serif;
+    height: 70px;
 }
 
 .navbar li a,
@@ -1077,6 +1097,10 @@ footer div a:hover {
     font-size: 12px;
 }
 
+.nav-link {
+    font-size: 14px;
+}
+
 .navbar-expand-sm .navbar-nav .nav-link {
     /* padding-right: 0;
     padding-left: 0; */
@@ -1252,6 +1276,18 @@ a.social-icon-noncolor:hover {
     display: block;
 }
 
+.deserts-img-menu {
+    margin: auto;
+}
+
+.categoires-menu {
+    width: 77%;
+    margin: auto;
+}
+
+.indicators{
+    gap: 21px !important;
+}
 /*******************************/
 .carousel-item-background {
     position: absolute;
@@ -1259,7 +1295,8 @@ a.social-icon-noncolor:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background: #22020230;
+    /* background: #22020230; */
+    background: linear-gradient(to right, transparent, transparent, rgb(0 0 0 / 21%));
     /* rgba(77, 77, 77, 0.387); */
     z-index: 1;
 }
@@ -1616,7 +1653,7 @@ div#mini-menu-carousel .carousel-inner img {
 }
 
 .contact-form-info {
-    margin: auto;
+   
 }
 
 .contact-container {
@@ -1673,8 +1710,19 @@ div#mini-menu-carousel .carousel-inner img {
 }
 
 /********** Media ***************/
+@media (max-width: 1512px) {
+    .carousel-row {
+        height: 719px;
+    }
+
+    .carousel-inner {
+        height: 719px;
+    }
+
+}
 
 @media (min-width: 1024px) {
+
     .info-product-details {
         max-width: 700px;
     }
