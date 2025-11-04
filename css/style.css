@@ -1,9 +1,16 @@
+
+html, body {
+    height: 100%;
+    margin: 0;
+      display: flex;
+  flex-direction: column;
+}
+
 body {
-    font: 400 15px Lato, 'Roboto';
+    font: 400 15px 'Roboto';
     line-height: 1.8;
     color: #303030;
-    margin: 0;
-    overflow-x: hidden !important;
+    min-height: 100vh;
 }
 
 h1 {
@@ -69,6 +76,11 @@ h4 {
 
 * {
     box-sizing: border-box;
+}
+
+#sliceNGo {
+    height: auto;
+    padding-bottom: 100px;
 }
 
 /******** Tabs ***********************/
@@ -617,6 +629,7 @@ figcaption {
     border-radius: 0;
     font-family: Roboto, Montserrat, sans-serif;
     height: 70px;
+    flex: none;
 }
 
 .navbar li a,
@@ -1286,7 +1299,7 @@ a.social-icon-noncolor:hover {
 }
 
 .indicators {
-    gap: 21px !important;
+    gap: 37px !important;
 }
 
 /*******************************/
@@ -1667,8 +1680,13 @@ div#mini-menu-carousel .carousel-inner img {
 }
 
 #footer-section {
+
     width: 100%;
-    margin: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: auto;
+    margin-bottom: 0;
+    bottom: 0;
     background-color: #fb3521;
     background-image: linear-gradient(1deg, #971e129e, #fb3521);
     color: #fff;
@@ -1709,7 +1727,7 @@ div#mini-menu-carousel .carousel-inner img {
 }
 
 .grid-space-products {
-    margin-top: 70px;
+    margin-top: 70px !important;
     gap: 31px;
 }
 
@@ -1721,21 +1739,24 @@ div#mini-menu-carousel .carousel-inner img {
     }
 
     .carousel-row {
-        height: 819px;
+        height: 781px;
     }
 
     .carousel-inner {
-        height: 819px;
+        height: 781px;
     }
 }
 
 @media (max-width: 1512px) {
-    
+    .carousel-container {
+        width: 91%;
+    }
+
     .category-menu-card {
         height: 331px;
         margin-left: 30px;
     }
-    
+
     .carousel-row {
         height: 719px;
     }

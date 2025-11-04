@@ -27,9 +27,9 @@
 <body id="torturiPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
   <!-- Logo -->
-  <div class="jumbotron text-center inner clearfix">
-    <a href="index.html">
-      <img src="../../../Images/logo-eisberg.png" width="250" height="100">
+  <div class="jumbotron clearfix">
+    <a href="/index.html">
+      <img src="../../../Images/logo-eisberg.png" id="jubotron-img-logo" alt="Eisberg" />
     </a>
   </div>
 
@@ -44,18 +44,19 @@
       <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="../../../index.html">ACASA</a>
+            <a class="nav-link active" aria-current="page" href="/index.html">ACASA</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#about">DESPRE NOI</a>
+              <a class="nav-link" href="/index.html#about"
+              onclick="window.location.href='/index.html#about'; return false;">DESPRE NOI</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="produse.html" id="navbarDropdownProducts" role="link"
+            <p class="nav-link dropdown-toggle" href="#" id="navbarDropdownProducts" role="link"
               data-bs-toggle="dropdown" aria-expanded="false">PRODUSE <i class="arrow down"
-                id="navbarDropdownProducts"></i></a>
+                id="navbarDropdownProducts"></i></p>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownProducts" id="products-submenu">
               <li class="nav-item dropend">
-                <a class="nav-link dropdown-toggle" href="../deserturi/deserturi.html" id="navbarDropdownDesserts"
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownDesserts"
                   role="link" data-bs-toggle="dropdown" aria-expanded="false">DESERTURI</a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownDesserts" id="deserts-submenu">
                   <li><a class="dropdown-item" href="/produse/deserturi/monoportii/monoportii.html">Monoporții</a></li>
@@ -88,7 +89,7 @@
               <li>
                 <hr class="dropdown-divider">
               </li>
-              <li><a class="dropdown-item" href="#">FRUTTINI SMOOTHIES</a></li>
+              <li><a class="dropdown-item" href="/produse/fruttini-smoothies/fruttini-smoothies.html">FRUTTINI SMOOTHIES</a></li>
               <li>
                 <hr class="dropdown-divider">
               </li>
@@ -104,12 +105,13 @@
             });
           </script>
           <li class="nav-item" id="contact-menu-item">
-            <a class="nav-link" href="#contact">CONTACT</a>
+             <a class="nav-link" href="/index.html#contact"
+              onclick="window.location.href='/index.html#contact'; return false;">CONTACT</a>
           </li>
           <li class="nav-item" id="language">
-            <a href="#ro"><img src="../../../Images/flags/ro-flag-ico.ico" alt="Ro flag" class="flag flag-ro"
+            <a href="/produse/deserturi/torturi/torturi.html"><img src="/Images/flags/ro-flag-ico.ico" alt="Ro flag" class="flag flag-ro"
                 title="RO"></img></a>
-            <a href="#en"><img src="../../../Images/flags/usa-flag-png.png" alt="Usa flag" class="flag flag-usa"
+            <a href="/en/products/deserts/cakes/cakes.html"><img src="/Images/flags/usa-flag-png.png" alt="Usa flag" class="flag flag-usa"
                 title="EN"></img></a>
           </li>
         </ul>

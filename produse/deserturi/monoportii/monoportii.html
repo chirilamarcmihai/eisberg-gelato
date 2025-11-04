@@ -21,15 +21,15 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
 
 <body id="monoportiiPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
   <!-- Logo -->
   <div class="jumbotron clearfix">
-    <a href="./index.html">
-      <img src="./Images/logo-eisberg.png" id="jubotron-img-logo" alt="Eisberg">
+    <a href="/index.html">
+      <img src="/Images/logo-eisberg.png" id="jubotron-img-logo" alt="Eisberg">
     </a>
   </div>
 
@@ -44,29 +44,30 @@
       <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="./index.html">ACASA</a>
+            <a class="nav-link active" aria-current="page" href="/index.html">ACASA</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#about">DESPRE NOI</a>
+            <a class="nav-link" href="/index.html#about" onclick="window.location.href='/index.html#about'; return false;">DESPRE NOI</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownProducts" role="link"
               data-bs-toggle="dropdown" aria-expanded="false">PRODUSE <i class="arrow down"
                 id="navbarDropdownProducts"></i></a>
+
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownProducts" id="products-submenu">
               <li class="nav-item dropend">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownDesserts" role="link"
                   data-bs-toggle="dropdown" aria-expanded="false">DESERTURI</a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownDesserts" id="deserts-submenu">
-                  <li><a class="dropdown-item" href="./produse/deserturi/monoportii/monoportii.html">Monoporții</a></li>
+                  <li><a class="dropdown-item" href="/produse/deserturi/monoportii/monoportii.html">Monoporții</a></li>
                   <li>
                     <hr class="dropdown-divider">
                   </li>
-                  <li><a class="dropdown-item" href="./produse/deserturi/torturi/torturi.html">TORTURI</a></li>
+                  <li><a class="dropdown-item" href="/produse/deserturi/torturi/torturi.html">TORTURI</a></li>
                   <li>
                     <hr class="dropdown-divider">
                   </li>
-                  <li><a class="dropdown-item" href="./produse/deserturi/slice-n-go/slice-n-go.html">SLICE N`GO</a></li>
+                  <li><a class="dropdown-item" href="/produse/deserturi/slice-n-go/slice-n-go.html">SLICE N`GO</a></li>
                 </ul>
               </li>
               <li>
@@ -76,24 +77,24 @@
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="link" data-bs-toggle="dropdown"
                   aria-expanded="false">Înghețată</a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="./produse/inghetate/inghetata-monoportii.html">Înghețată
+                  <li><a class="dropdown-item" href="/produse/inghetate/inghetata-monoportii.html">Înghețată
                       monoporții</a></li>
                   <li>
                     <hr class="dropdown-divider">
                   </li>
-                  <li><a class="dropdown-item" href="./produse/inghetate/inghetata-in-vascheta.html">Înghețată
+                  <li><a class="dropdown-item" href="/produse/inghetate/inghetata-in-vascheta.html">Înghețată
                       vaschetă</a></li>
                 </ul>
               </li>
               <li>
                 <hr class="dropdown-divider">
               </li>
-              <li><a class="dropdown-item" href="./produse/fruttini-smoothies/fruttini-smoothies.html">FRUTTINI
+              <li><a class="dropdown-item" href="/produse/fruttini-smoothies/fruttini-smoothies.html">FRUTTINI
                   SMOOTHIES</a></li>
               <li>
                 <hr class="dropdown-divider">
               </li>
-              <li><a class="dropdown-item" href="./produse/valori-nutritionale.pdf">VALORI NUTRITIONALE</a></li>
+              <li><a class="dropdown-item" href="/produse/valori-nutritionale.pdf">VALORI NUTRITIONALE</a></li>
             </ul>
           </li>
           <script>
@@ -105,12 +106,12 @@
             });
           </script>
           <li class="nav-item" id="contact-menu-item">
-            <a class="nav-link" href="#contact">CONTACT</a>
+            <a class="nav-link" href="/index.html#contact" onclick="window.location.href='/index.html#contact'; return false;">CONTACT</a>
           </li>
           <li class="nav-item" id="language">
-            <a href="#ro"><img src="./Images/flags/ro-flag-ico.ico" alt="Ro flag" class="flag flag-ro"
+            <a href="/produse/deserturi/monoportii/monoportii.html"><img src="/Images/flags/ro-flag-ico.ico" alt="Ro flag" class="flag flag-ro"
                 title="RO"></img></a>
-            <a href="#en"><img src="./Images/flags/usa-flag-png.png" alt="Usa flag" class="flag flag-usa"
+            <a href="/en/products/deserts/single-serving/single-serving.html"><img src="/Images/flags/usa-flag-png.png" alt="Usa flag" class="flag flag-usa"
                 title="EN"></img></a>
           </li>
         </ul>
@@ -122,26 +123,7 @@
 
   <!-- Container -->
   <div id="monoportii" class="container-fluid">
-    <!-- Banner section -->
     <div class="container-fluid">
-
-      <!-- Banner section -->
-      <div class="row banner-section">
-        <div id="banner-section-background"></div>
-        <img src="./Images/zebratto-collage-ro.png" alt="zebratto" class="banner-section-img">
-
-        <div class="banner-section-info-page">
-          <!-- Breadcrumb -->
-          <div class="breadcrumb-section">
-            <ul class="breadcrumb">
-              <li><a href="./index.html">ACASĂ</a></li>
-              <li><a href="./produse/deserturi/">DESERTURI</a></li>
-              <li><a href="../../deserturi/monoportii/monoportii.html">MONOPORȚII</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
       <!-- Header section -->
       <div class="row row-cols-auto justify-content-center header-section-title">
         <h3 class="carousel-caption-description-adjective" style="color: #fb3521 !important;">eisberg gelato</h3>
@@ -154,32 +136,32 @@
       <div class="row row-cols-auto justify-content-center grid-space-products">
         <div class="col-sm-2 figure-section">
           <figure>
-            <a href="./produse/deserturi/monoportii/tiramisu.html">
-              <img src="./Images/deserturi/monoportii/tiramisu.png" alt="Tiramisu" class="img-presentation-grid">
+            <a href="/produse/deserturi/monoportii/tiramisu.html">
+              <img src="/Images/deserturi/monoportii/tiramisu.png" alt="Tiramisu" class="img-presentation-grid">
               <figcaption>Tiramisu</figcaption>
             </a>
           </figure>
         </div>
         <div class="col-sm-2 figure-section">
           <figure>
-            <a href="./produse/deserturi/monoportii/brownie.html">
-              <img src="./Images/deserturi/monoportii/brownie.png" alt="Brownie" class="img-presentation-grid">
+            <a href="/produse/deserturi/monoportii/brownie.html">
+              <img src="/Images/deserturi/monoportii/brownie.png" alt="Brownie" class="img-presentation-grid">
               <figcaption>Brownie</figcaption>
             </a>
           </figure>
         </div>
         <div class="col-sm-2 figure-section">
           <figure>
-            <a href="./produse/deserturi/monoportii/zebratto.html">
-              <img src="./Images/deserturi/monoportii/zebratto.png" alt="Zebratto" class="img-presentation-grid">
+            <a href="/produse/deserturi/monoportii/zebratto.html">
+              <img src="/Images/deserturi/monoportii/zebratto.png" alt="Zebratto" class="img-presentation-grid">
               <figcaption>Zebratto</figcaption>
             </a>
           </figure>
         </div>
         <div class="col-sm-2 figure-section">
           <figure>
-            <a href="./produse/deserturi/monoportii/crocantinno.html">
-              <img src="./Images/deserturi/monoportii/crocantinno.png" alt="Crocantinno" class="img-presentation-grid">
+            <a href="/produse/deserturi/monoportii/crocantinno.html">
+              <img src="/Images/deserturi/monoportii/crocantinno.png" alt="Crocantinno" class="img-presentation-grid">
               <figcaption>Crocantinno</figcaption>
             </a>
           </figure>
@@ -189,33 +171,33 @@
       <div class="row row-cols-auto justify-content-center grid-space-products">
         <div class="col-2 col-sm-2 p-3 figure-section">
           <figure>
-            <a href="./produse/deserturi/monoportii/caramello.html">
-              <img src="./Images/deserturi/monoportii/caramello.png" alt="Caramello" class="img-presentation-grid">
-              <figcaption>Caramello</figcaption>
+            <a href="/produse/deserturi/monoportii/caramello.html">
+              <img src="/Images/deserturi/monoportii/caramello.png" alt="Caramelisse" class="img-presentation-grid">
+              <figcaption>Caramelisse</figcaption>
             </a>
           </figure>
         </div>
         <div class="col-2 col-sm-2 p-3 figure-section">
           <figure>
-            <a href="./produse/deserturi/monoportii/baileys.html">
-              <img src="./Images/deserturi/monoportii/baileys_cake.png" alt="Baileys cake" class="img-presentation-grid"
+            <a href="/produse/deserturi/monoportii/baileys.html">
+              <img src="/Images/deserturi/monoportii/baileys_cake.png" alt="Baileys cake" class="img-presentation-grid"
                 style="padding: 17px 25px;">
-              <figcaption>Baileys</figcaption>
+              <figcaption>Baileys cake</figcaption>
             </a>
           </figure>
         </div>
         <div class="col-2 col-sm-2 p-3 figure-section">
           <figure>
-            <a href="./produse/deserturi/monoportii/yogoruby.html">
-              <img src="./Images/deserturi/monoportii/yogoruby.png" alt="Yogoruby" class="img-presentation-grid">
+            <a href="/produse/deserturi/monoportii/yogoruby.html">
+              <img src="/Images/deserturi/monoportii/yogoruby.png" alt="Yogoruby" class="img-presentation-grid">
               <figcaption>Yogoruby</figcaption>
             </a>
           </figure>
         </div>
         <div class="col-2 col-sm-2 p-3 figure-section">
           <figure>
-            <a href="./produse/deserturi/monoportii/pistachio-dome.html">
-              <img src="./Images/deserturi/monoportii/pistachio-dome.png" alt="Pistachio dome"
+            <a href="/produse/deserturi/monoportii/pistachio-dome.html">
+              <img src="/Images/deserturi/monoportii/pistachio-dome.png" alt="Pistachio dome"
                 class="img-presentation-grid" style="padding: 17px 25px;">
               <figcaption>Pistachio dome</figcaption>
             </a>
@@ -226,7 +208,7 @@
       <div class="row row-cols-auto justify-content-center grid-space-products">
         <div class="col-sm-2 p-3 figure-section">
           <figure>
-            <a href="../../desert/lava-cake.html">
+            <a href="/produse/deserturi/monoportii/lava-cake.html">
               <img src="/Images/deserturi/monoportii/lava-cake-chocolate.png" alt="Lava cake chocolate"
                 class="img-presentation-grid">
               <figcaption>Lava cake</figcaption>
@@ -235,7 +217,7 @@
         </div>
         <div class="col-sm-2 p-3 figure-section">
           <figure>
-            <a href="../../desert/lava-cake-forest-fruit.html">
+            <a href="/produse/deserturi/monoportii/lava-cake-forest-fruit.html">
               <img src="/Images/deserturi/monoportii/lava-cake-forest-fruit.png" alt="Lava cake forest fruit"
                 class="img-presentation-grid">
               <figcaption>Lava cake forest fruit</figcaption>
@@ -244,16 +226,16 @@
         </div>
         <div class="col-sm-2 p-3 figure-section">
           <figure>
-            <a href="../../desert/lava-cake-white-chocolate.html">
+            <a href="/produse/deserturi/monoportii/lava-cake-white-chocolate.html">
               <img src="/Images/deserturi/monoportii/lava-cake-white-chocolate.png" alt="Lava cake white chocolate"
                 class="img-presentation-grid">
-              <figcaption>Lava cake white chocolate</figcaption>
+              <figcaption>White chocolate lava cake</figcaption>
             </a>
           </figure>
         </div>
         <div class="col-sm-2 p-3 figure-section">
           <figure>
-            <a href="../../desert/lemon-mousse.html">
+            <a href="/produse/deserturi/monoportii/lemon-mousse.html">
               <img src="/Images/deserturi/monoportii/lemon-mousse.png" alt="Lemon mousse" class="img-presentation-grid">
               <figcaption>Lemon mousse</figcaption>
             </a>
@@ -268,7 +250,7 @@
     <footer class="container-fluid text-center" id="footer-section">
       <div class="row center-element wrapper-footer-meniu" style="padding-top: 37px;">
         <div class="col-md-3">
-          <img src="./Images/logo-white.png" width="100" height="50" id="footer-img-logo">
+          <img src="../../../Images/logo-white.png" width="100" height="50" id="footer-img-logo">
           <div class="contact-info-footer">
             <p class="text-center"><span>SUNAȚI ACUM LA:</span><br />0755 046 429</p>
             <p class="text-center"><span>ADRESA DE EMAIL:</span><br />office@eisberg-gelato.ro</p>
@@ -299,18 +281,18 @@
           </div>
         </div>
         <div class="col-md-3">
-          <h5>Despre Noi</h5>
+          <h5 style="text-decoration: underline;">Despre Noi</h5>
           <a href="#about">Despre Eisberg</a><br>
           <a href="#">Viziunea Eisberg</a>
         </div>
         <div class="col-md-3">
-          <h5>Produse</h5>
-          <a href="./produse/deserturi/monoportii/monoportii.html">Deserturi</a><br>
-          <a href="./produse/inghetate/inghetata-monoportii.html">Înghețată</a><br>
-          <a href="./produse/fruttini-smoothies/fruttini-smoothies.html">Fruttini Smoothies</a>
+          <h5 style="text-decoration: underline;">Produse</h5>
+          <a href="/produse/deserturi/monoportii/monoportii.html">Deserturi</a><br>
+          <a href="/produse/inghetate/inghetata-monoportii.html">Înghețată</a><br>
+          <a href="/produse/fruttini-smoothies/fruttini-smoothies.html">Fruttini Smoothies</a>
         </div>
         <div class="col-md-3">
-          <h5>Info utile</h5>
+          <h5 style="text-decoration: underline;">Info utile</h5>
           <a href="#">Contact</a><br>
           <a href="#">Politică de Confidențialitate</a><br>
           <a href="#">Termeni și Condiții</a><br>
@@ -323,7 +305,7 @@
       <p
         style="text-align: center !important; font-family: 'Roboto'; font-size: 12px; font-weight: 100; color: grey; background-color: #fff; margin-bottom: 0;">
         <b><i>Eisberg © Copyright 2025 | Powered by
-            <image src="./Images/fsp.ico" title="FSP" alt="FSP" tooltip="FPS" style="width: 19px; height: 19px;" />
+            <image src="../../../Images/fsp.ico" title="FSP" alt="FSP" tooltip="FPS" style="width: 19px; height: 19px;" />
           </i></b>
       </p>
     </footer>
