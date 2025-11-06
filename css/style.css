@@ -1,9 +1,9 @@
-
-html, body {
+html,
+body {
     height: 100%;
     margin: 0;
-      display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 body {
@@ -78,10 +78,15 @@ h4 {
     box-sizing: border-box;
 }
 
-#sliceNGo {
+#sliceNGo,
+#cakes,
+#fruttiniSmoothies,
+#monoportions {
     height: auto;
     padding-bottom: 100px;
+    flex: 1;
 }
+
 
 /******** Tabs ***********************/
 
@@ -235,8 +240,8 @@ h4 {
 }
 
 .row.center-element {
-    width: 50%;
-    margin-left: 25%;
+    width: 57%;
+    margin-left: 21%;
     margin-right: 25%;
 }
 
@@ -550,8 +555,8 @@ figcaption {
 }
 
 .figure-section {
-    width: 250px;
-    height: 291px;
+    width: 271px;
+    height: 251px;
 }
 
 .figure-section:hover {
@@ -1107,7 +1112,7 @@ footer div a:hover {
 
 .dropdown-menu {
     font-family: 'Roboto';
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .nav-link {
@@ -1221,7 +1226,7 @@ a.dropdown-item {
 .social-icon-bar a {
     display: block;
     text-align: center;
-    padding: 16px;
+    padding: 7px;
     transition: all 0.3s ease;
     color: white;
     font-size: 11px;
@@ -1300,6 +1305,11 @@ a.social-icon-noncolor:hover {
 
 .indicators {
     gap: 37px !important;
+}
+
+#various-desserts-carousel {
+    width: inherit;
+    margin-top: 101px;
 }
 
 /*******************************/
@@ -1731,6 +1741,15 @@ div#mini-menu-carousel .carousel-inner img {
     gap: 31px;
 }
 
+#mini-menu {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.vdc-lrm {
+    width: 400px;
+}
+
 /********** Media ***************/
 @media (min-width: 1512px) {
     .category-menu-card {
@@ -1748,8 +1767,24 @@ div#mini-menu-carousel .carousel-inner img {
 }
 
 @media (max-width: 1512px) {
+    #various-desserts-carousel {
+        margin-top: 71px;
+    }
+
+    .form-check-input {
+        margin-top: .1em;
+    }
+
     .carousel-container {
-        width: 91%;
+        width: 93%;
+    }
+
+    .vdc-lrm {
+        width: 400px;
+    }
+
+    .various-desserts-presentation-title {
+        font-size: 19px;
     }
 
     .category-menu-card {
@@ -1762,7 +1797,7 @@ div#mini-menu-carousel .carousel-inner img {
     }
 
     .carousel-inner {
-        height: 719px;
+        height: 581px;
     }
 }
 
@@ -1784,8 +1819,8 @@ div#mini-menu-carousel .carousel-inner img {
     }
 
     .figure-section {
-        width: 241px;
-        height: 241px;
+        width: 271px;
+        height: 253px;
     }
 }
 
@@ -1906,7 +1941,7 @@ div#mini-menu-carousel .carousel-inner img {
 
     .contact-form-info {
         width: 43%;
-        margin-left: 14%;
+        margin-left: 11%;
     }
 
     .horizontal-carousel img {
@@ -1914,8 +1949,9 @@ div#mini-menu-carousel .carousel-inner img {
         height: 100px;
     }
 
-    .row.center-element {
+        .row.center-element {
         margin-right: 11%;
+        font-size: 14px;
     }
 }
 
@@ -1997,6 +2033,7 @@ div#mini-menu-carousel .carousel-inner img {
 
     #products-submenu {
         margin-top: 5px !important;
+        width: 219px !important;
     }
 }
 
@@ -2018,7 +2055,7 @@ div#mini-menu-carousel .carousel-inner img {
     }
 
     .contact-info-position {
-        left: 11px !important;
+        left: 8px !important;
         position: relative;
     }
 
