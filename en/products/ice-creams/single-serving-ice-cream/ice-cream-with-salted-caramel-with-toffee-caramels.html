@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="ro">
+<html lang="en">
 
 <head>
-  <title>Eisberg: Înghețată fistic</title>
+  <title>Eisberg: Salted caramel ice cream with toffee caramels</title>
   <link rel="icon" href="/Images/favicon-150x150.png" sizes="32x32" />
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -28,7 +28,7 @@
 
   <!-- Logo -->
   <div class="jumbotron clearfix">
-    <a href="/index.html">
+    <a href="/en/index.html">
       <img src="/Images/logo-eisberg.png" id="jubotron-img-logo" alt="Eisberg logo" />
     </a>
   </div>
@@ -42,33 +42,41 @@
       </button>
 
       <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav me-auto mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/index.html">ACASA</a>
+            <a class="nav-link active" aria-current="page" href="/en/index.html">HOME</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/index.html#about"
-              onclick="window.location.href='/index.html#about'; return false;">DESPRE NOI</a>
+            <a class="nav-link" href="/en/index.html#about"
+              onclick="window.location.href='/en/index.html#about'; return false;">ABOUT US</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownProducts" role="link"
-              data-bs-toggle="dropdown" aria-expanded="false">PRODUSE <i class="arrow down"
+              data-bs-toggle="dropdown" aria-expanded="false">PRODUCTS <i class="arrow down"
                 id="navbarDropdownProducts"></i></a>
-
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdownProducts" id="products-submenu">
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownProducts" id="products-submenu"
+              style="width: 201px;">
               <li class="nav-item dropend">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownDesserts" role="link"
-                  data-bs-toggle="dropdown" aria-expanded="false">DESERTURI</a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownDesserts" id="deserts-submenu">
-                  <li><a class="dropdown-item" href="/produse/deserturi/monoportii/monoportii.html">Monoporții</a></li>
+                  data-bs-toggle="dropdown" aria-expanded="false">DESSERTS</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownDesserts" id="deserts-submenu"
+                  style="width: 201px !important;">
+                  <li>
+                    <a class="dropdown-item"
+                      href="/en/products/deserts/single-serving/single-serving.html">Single-Serving</a>
+                  </li>
                   <li>
                     <hr class="dropdown-divider">
                   </li>
-                  <li><a class="dropdown-item" href="/produse/deserturi/torturi/torturi.html">TORTURI</a></li>
+                  <li>
+                    <a class="dropdown-item" href="/en/products/deserts/cakes/cakes.html">Cakes</a>
+                  </li>
                   <li>
                     <hr class="dropdown-divider">
                   </li>
-                  <li><a class="dropdown-item" href="/produse/deserturi/slice-n-go/slice-n-go.html">SLICE N`GO</a></li>
+                  <li>
+                    <a class="dropdown-item" href="/en/products/deserts/slice-n-go/slice-n-go.html">SLICE N`GO</a>
+                  </li>
                 </ul>
               </li>
               <li>
@@ -76,25 +84,25 @@
               </li>
               <li class="nav-item dropend">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="link" data-bs-toggle="dropdown"
-                  aria-expanded="false">Înghețată</a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="/produse/inghetate/inghetata-monoportii.html">monoporții</a></li>
+                  aria-expanded="false">Ice Cream</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="width: 253px;">
+                  <li><a class="dropdown-item"
+                      href="/en/products/ice-creams/single-serving-ice-cream.html">Single-Serving
+                      Ice
+                      Cream</a></li>
                   <li>
                     <hr class="dropdown-divider">
                   </li>
-                  <li><a class="dropdown-item" href="/produse/inghetate/inghetata-in-vascheta.html">vaschetă</a></li>
+                  <li><a class="dropdown-item" href="/en/products/ice-creams/tray-ice-cream.html">Tray
+                      Ice Cream</a>
+                  </li>
                 </ul>
               </li>
               <li>
                 <hr class="dropdown-divider">
               </li>
-              <li><a class="dropdown-item" href="/produse/fruttini-smoothies/fruttini-smoothies.html">FRUTTINI
+              <li><a class="dropdown-item" href="/en/products/fruttini-smoothies/fruttini-smoothies.html">FRUTTINI
                   SMOOTHIES</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="/produse/valori-nutritionale.pdf">VALORI NUTRITIONALE</a>
-              </li>
             </ul>
           </li>
           <script>
@@ -106,14 +114,15 @@
             });
           </script>
           <li class="nav-item" id="contact-menu-item">
-            <a class="nav-link" href="/index.html#contact"
-              onclick="window.location.href='/index.html#contact'; return false;">CONTACT</a>
+            <a class="nav-link" href="/en/index.html#contact"
+              onclick="window.location.href='/en/index.html#contact'; return false;">CONTACT</a>
           </li>
           <li class="nav-item" id="language">
-            <a href="/produse/inghetate/inghetata-monoportii/inghetata-fistic.html"><img
-                src="/Images/flags/ro-flag-ico.ico" alt="Ro flag" class="flag flag-ro" title="RO" /></a>
-            <a href="/en/products/ice-creams/single-serving-ice-cream/ice-cream-pistachio.html"><img
-                src="/Images/flags/usa-flag-png.png" alt="Usa flag" class="flag flag-usa" title="EN" /></a>
+            <a href="/produse/inghetate/inghetata-monoportii/inghetata-cu-caramel-sarat-cu-caramele-toffee.html"><img
+                src="/Images/flags/ro-flag-ico.ico" alt="RO" class="flag flag-ro" title="RO"></img></a>
+            <a
+              href="/en/products/ice-creams/single-serving-ice-cream/ice-cream-with-salted-caramel-with-toffee-caramels.html"><img
+                src="/Images/flags/usa-flag-png.png" alt="EN" class="flag flag-usa" title="EN"></img></a>
           </li>
         </ul>
       </div>
@@ -135,7 +144,7 @@
           <!-- Product image -->
           <div class="container-product-slider justify-content-center">
             <div class="productImgSlides">
-              <img src="/Images/inghetata/inghetata-monoportii/inghetata-fistic.png" alt="Înghețată fistic"
+              <img src="/Images/inghetata/inghetata-monoportii/caramel-bretzel.png" alt="Caramel bretzel"
                 class="productImgPresentation" />
             </div>
           </div>
@@ -143,24 +152,24 @@
 
         <div class="col-sm-4 p-3 header-section-subtitle">
           <div class="row">
-            <h3 class="carousel-caption-description-adjective" style="left:0; color: #2e2e2e !important;">Înghețată
-              fistic</h3>
+            <h3 class="carousel-caption-description-adjective" style="left:0; color: #2e2e2e !important;">Salted caramel
+              ice cream with toffee caramels</h3>
           </div>
 
           <!-- Tabs product info -->
           <div class="row tabs-product-details">
             <div class="tab">
-              <button class="tablinks active" onclick="openTab(event, 'Description')">Descriere</button>
-              <button class="tablinks" onclick="openTab(event, 'Ingredients')">Ingrediente</button>
+              <button class="tablinks active" onclick="openTab(event, 'Description')">Description</button>
+              <button class="tablinks" onclick="openTab(event, 'Ingredients')">Ingredients</button>
             </div>
 
             <div id="Description" class="tabcontent" style="display: block;">
-              <p>Înghețată fistic cu variegato fistic crunchy.
+              <p>Salted caramel ice cream with pretzel topping.
               </p>
             </div>
 
             <div id="Ingredients" class="tabcontent">
-              <p>fistic</p>
+              <p>salted caramel, pretzel topping</p>
             </div>
           </div>
 
@@ -172,12 +181,12 @@
                   style="width: 21px; height: 17px; margin-top: -4px;"></img>
               </div>
               <div class="col-sm-3" style="padding-left: 0;">
-                <p style="color: #fb3521; font-family: 'Roboto';">Mod de servire</p>
+                <p style="color: #fb3521; font-family: 'Roboto';">Serving method</p>
               </div>
             </div>
 
             <div class="row row-cols-auto">
-              <p>A nu se decongela! Gata de servit!
+              <p>Do not defrost! Ready to serve!
               </p>
             </div>
 
@@ -187,12 +196,12 @@
                   style="width: 21px; height: 17px; margin-top: -2px;"></img>
               </div>
               <div class="col-sm-3" style="padding-left: 0;">
-                <p style="color: #fb3521; font-family: 'Roboto'">Greutate</p>
+                <p style="color: #fb3521; font-family: 'Roboto'">Weight</p>
               </div>
             </div>
 
             <div class="row row-cols-auto">
-              <p>90 g / 160 ml</p>
+              <p>90 g / 170 ml</p>
             </div>
 
             <div class="row row-cols-auto">
@@ -201,11 +210,11 @@
                   style="width: 21px; height: 17px; margin-top: -2px;"></img>
               </div>
               <div class="col-sm-3" style="padding-left: 0;">
-                <p style="color: #fb3521; font-family: 'Roboto'">Porții / cutie</p>
+                <p style="color: #fb3521; font-family: 'Roboto'">Servings / box</p>
               </div>
             </div>
             <div class="row row-cols-auto">
-              <p>12 porții</p>
+              <p>12 portions</p>
             </div>
           </div>
         </div>
@@ -219,9 +228,9 @@
       <div class="col-md-3">
         <img src="/Images/logo-white.png" width="100" height="50" id="footer-img-logo">
         <div class="contact-info-footer">
-          <p class="text-center"><span>SUNAȚI ACUM LA:</span><br />0755 046 429</p>
-          <p class="text-center"><span>ADRESA DE EMAIL:</span><br />office@eisberg-gelato.ro</p>
-          <p class="text-center"><span>URMĂRIȚI-NE PE:</span><br />
+          <p class="text-center"><span>CALL US:</span><br />0755 046 429</p>
+          <p class="text-center"><span>EMAIL:</span><br />office@eisberg-gelato.ro</p>
+          <p class="text-center"><span>FOLLOW US:</span><br />
             <a href="https://www.facebook.com/EisbergGelato" target="_blank" class="footer-social-icon-color">
               <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor" class="bi bi-facebook"
                 viewBox="0 0 16 16">
@@ -247,26 +256,29 @@
           </p>
         </div>
       </div>
+
       <div class="col-md-3">
-        <h5 style="text-decoration: underline;">Despre Noi</h5>
-        <a class="nav-link" href="/index.html#about"
-          onclick="window.location.href='/index.html#about'; return false;">Despre Eisberg</a><br>
-        <a class="nav-link" href="/index.html#about"
-          onclick="window.location.href='/index.html#about'; return false;">Viziunea Eisberg</a>
+        <h5 style="text-decoration: underline;">ABOUT US</h5>
+        <a href="/en/index.html#about" onclick="window.location.href='/en/index.html#about'; return false;">About
+          Eisberg</a><br>
+        <a href="/en/index.html#about" onclick="window.location.href='/en/index.html#about'; return false;">Eisberg
+          Vision</a>
       </div>
+
       <div class="col-md-3">
-        <h5 style="text-decoration: underline;">Produse</h5>
-        <a href="/produse/deserturi/monoportii/monoportii.html">Deserturi</a><br>
-        <a href="/produse/inghetate/inghetata-monoportii.html">Înghețată</a><br>
-        <a href="/produse/fruttini-smoothies/fruttini-smoothies.html">Fruttini Smoothies</a>
+        <h5 style="text-decoration: underline;">PRODUCTS</h5>
+        <a href="/en/products/deserts/single-serving/single-serving.html">Desserts</a><br>
+        <a href="/en/products/ice-creams/single-serving-ice-cream.html">Ice Cream</a><br>
+        <a href="/en/products/fruttini-smoothies/fruttini-smoothies.html">Fruttini Smoothies</a>
       </div>
+
       <div class="col-md-3">
-        <h5 style="text-decoration: underline;">Info utile</h5>
-        <a class="nav-link" href="/index.html#contact"
-          onclick="window.location.href='/index.html#contact'; return false;">Contact</a><br>
-        <a href="#">Politică de Confidențialitate</a><br>
-        <a href="#">Termeni și Condiții</a><br>
-        <a href="#">Politică Cookies</a>
+        <h5 style="text-decoration: underline;">USEFUL INFO</h5>
+        <a href="/en/index.html#contact"
+          onclick="window.location.href='/en/index.html#contact'; return false;">Contact</a><br>
+        <a href="">Privacy Policy</a><br>
+        <a href="/termeni-conditii.html">Terms & Conditions</a><br>
+        <a href="#">Cookies Policy</a>
       </div>
     </div>
     <a href="#eisbergPage" title="To Top">

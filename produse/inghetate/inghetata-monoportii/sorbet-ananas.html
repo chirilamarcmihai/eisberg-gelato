@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ro">
 
 <head>
-  <title>Eisberg: Ananas umplut cu inghețată tropicală</title>
-  <link rel="icon" href="../../../Images/favicon-150x150.png" sizes="32x32" />
+  <title>Eisberg: Ananas umplut cu înghețată tropicală</title>
+  <link rel="icon" href="/Images/favicon-150x150.png" sizes="32x32" />
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -21,15 +21,15 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-  <link rel="stylesheet" type="text/css" href="../../../css/style.css">
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
 
-<body id="monoportiiPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+<body id="icecreamPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
   <!-- Logo -->
-  <div class="jumbotron text-center inner clearfix">
-    <a href="../../index.html">
-      <img src="../../../Images/logo-eisberg.png" width="250" height="100" alt="Eisberg Gelato Logo">
+  <div class="jumbotron clearfix">
+    <a href="/index.html">
+      <img src="/Images/logo-eisberg.png" id="jubotron-img-logo" alt="Eisberg logo" />
     </a>
   </div>
 
@@ -44,19 +44,21 @@
       <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="../../../index.html">ACASA</a>
+            <a class="nav-link active" aria-current="page" href="/index.html">ACASA</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#about">DESPRE NOI</a>
+            <a class="nav-link" href="/index.html#about"
+              onclick="window.location.href='/index.html#about'; return false;">DESPRE NOI</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="produse.html" id="navbarDropdownProducts" role="link"
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownProducts" role="link"
               data-bs-toggle="dropdown" aria-expanded="false">PRODUSE <i class="arrow down"
                 id="navbarDropdownProducts"></i></a>
+
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownProducts" id="products-submenu">
               <li class="nav-item dropend">
-                <a class="nav-link dropdown-toggle" href="../deserturi/deserturi.html" id="navbarDropdownDesserts"
-                  role="link" data-bs-toggle="dropdown" aria-expanded="false">DESERTURI</a>
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownDesserts" role="link"
+                  data-bs-toggle="dropdown" aria-expanded="false">DESERTURI</a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownDesserts" id="deserts-submenu">
                   <li><a class="dropdown-item" href="/produse/deserturi/monoportii/monoportii.html">Monoporții</a></li>
                   <li>
@@ -73,27 +75,26 @@
                 <hr class="dropdown-divider">
               </li>
               <li class="nav-item dropend">
-                <a class="nav-link dropdown-toggle" href="../produse.html" id="navbarDropdown" role="link"
-                  data-bs-toggle="dropdown" aria-expanded="false">Înghețată</a>
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="link" data-bs-toggle="dropdown"
+                  aria-expanded="false">Înghețată</a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="/produse/inghetate/inghetata-monoportii.html">Înghețată
-                      monoporții</a></li>
+                  <li><a class="dropdown-item" href="/produse/inghetate/inghetata-monoportii.html">monoporții</a></li>
                   <li>
                     <hr class="dropdown-divider">
                   </li>
-                  <li><a class="dropdown-item" href="/produse/inghetate/inghetata-in-vascheta.html">Înghețată
-                      vaschetă</a></li>
+                  <li><a class="dropdown-item" href="/produse/inghetate/inghetata-in-vascheta.html">vaschetă</a></li>
                 </ul>
               </li>
               <li>
                 <hr class="dropdown-divider">
               </li>
-              <li><a class="dropdown-item" href="../../produse/fruttini-smoothies/fruttini-smoothies.html">FRUTTINI
+              <li><a class="dropdown-item" href="/produse/fruttini-smoothies/fruttini-smoothies.html">FRUTTINI
                   SMOOTHIES</a></li>
               <li>
                 <hr class="dropdown-divider">
               </li>
-              <li><a class="dropdown-item" href="/produse/valori-nutritionale.pdf">VALORI NUTRITIONALE</a></li>
+              <li><a class="dropdown-item" href="/produse/valori-nutritionale.pdf">VALORI NUTRITIONALE</a>
+              </li>
             </ul>
           </li>
           <script>
@@ -105,13 +106,14 @@
             });
           </script>
           <li class="nav-item" id="contact-menu-item">
-            <a class="nav-link" href="#contact">CONTACT</a>
+            <a class="nav-link" href="/index.html#contact"
+              onclick="window.location.href='/index.html#contact'; return false;">CONTACT</a>
           </li>
           <li class="nav-item" id="language">
-            <a href="#ro"><img src="../../../Images/flags/ro-flag-ico.ico" alt="Ro flag" class="flag flag-ro"
-                title="RO" /></a>
-            <a href="#en"><img src="../../../Images/flags/usa-flag-png.png" alt="Usa flag" class="flag flag-usa"
-                title="EN" /></a>
+            <a href="/produse/inghetate/inghetata-monoportii/sorbet-ananas.html"><img
+                src="/Images/flags/ro-flag-ico.ico" alt="Ro flag" class="flag flag-ro" title="RO" /></a>
+            <a href="/en/products/ice-creams/single-serving-ice-cream/pineapple-sorbet.html"><img
+                src="/Images/flags/usa-flag-png.png" alt="Usa flag" class="flag flag-usa" title="EN" /></a>
           </li>
         </ul>
       </div>
@@ -121,7 +123,7 @@
   <div style="border-bottom: 1px solid #c5c5c5;box-shadow: 0px 7px 16px #747474, 0px 0px 7px #797676;"></div>
 
   <!-- Container -->
-  <div id="monoportii" class="container-fluid">
+  <div id="icecream" class="container-fluid">
     <div class="container-fluid">
 
       <!-- Header section -->
@@ -133,7 +135,8 @@
           <!-- Product image -->
           <div class="container-product-slider justify-content-center">
             <div class="productImgSlides">
-              <img src="/Images/inghetata/inghetata-monoportii/ananas-icecream.png" alt="Inghetata in ananas" class="productImgPresentation" />
+              <img src="/Images/inghetata/inghetata-monoportii/ananas-icecream.png" alt="Inghetata in ananas"
+                class="productImgPresentation" />
             </div>
           </div>
         </div>
@@ -162,64 +165,63 @@
           </div>
 
           <!-- Info product  -->
-          <div class="row" style="height: 25px;">
-            <div class="col-sm-auto">
-              <img src="/Images/glyphs/spoon-sm.png" alt="Spoon" style="width: 21px; height: 17px; margin-top: -4px;" />
+          <div class="info-product-details">
+            <div class="row row-cols-auto">
+              <div class="col-sm-2">
+                <img src="/Images/glyphs/spoon-sm.png" alt="Spoon"
+                  style="width: 21px; height: 17px; margin-top: -4px;"></img>
+              </div>
+              <div class="col-sm-3" style="padding-left: 0;">
+                <p style="color: #fb3521; font-family: 'Roboto';">Mod de servire</p>
+              </div>
             </div>
-            <div class="col-sm-3" style="padding-left: 0;">
-              <p style="color: #fb3521; font-family: 'Roboto';">MOD DE SERVIRE</p>
-            </div>
-          </div>
 
-          <div class="row">
-            <p>A nu se decongela! Gata de servit!
-            </p>
-          </div>
-
-          <div class="row" style="height: 25px;">
-            <div class="col-sm-auto">
-              <img src="/Images/glyphs/balance-scale-sm.png" alt="Balance scale"
-                style="width: 21px; height: 17px; margin-top: -2px;" />
+            <div class="row row-cols-auto">
+              <p>A nu se decongela! Gata de servit!
+              </p>
             </div>
-            <div class="col-sm-auto" style="padding-left: 0;">
-              <p style="color: #fb3521; font-family: 'Roboto'">Greutate</p>
+
+            <div class="row row-cols-auto">
+              <div class="col-sm-auto">
+                <img src="/Images/glyphs/balance-scale-sm.png" alt="Balance scale"
+                  style="width: 21px; height: 17px; margin-top: -2px;" />
+              </div>
+              <div class="col-sm-auto" style="padding-left: 0;">
+                <p style="color: #fb3521; font-family: 'Roboto'">Greutate</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <p>90 g / 170 ml</p>
+            </div>
+
+            <div class="row row-cols-auto">
+              <div class="col-sm-auto">
+                <img src="/Images/glyphs/pie-slice-sm.png" alt="Pie slice"
+                  style="width: 21px; height: 17px; margin-top: -2px;" />
+              </div>
+              <div class="col-sm-3" style="padding-left: 0;">
+                <p style="color: #fb3521; font-family: 'Roboto'">Porții / cutie</p>
+              </div>
+            </div>
+            <div class="row">
+              <p>6 porții</p>
             </div>
           </div>
-
-          <div class="row">
-            <p>90 g / 170 ml</p>
-          </div>
-
-          <div class="row" style="height: 25px;">
-            <div class="col-sm-auto">
-              <img src="/Images/glyphs/pie-slice-sm.png" alt="Pie slice"
-                style="width: 21px; height: 17px; margin-top: -2px;" />
-            </div>
-            <div class="col-sm-3" style="padding-left: 0;">
-              <p style="color: #fb3521; font-family: 'Roboto'">Porții / cutie</p>
-            </div>
-          </div>
-          <div class="row">
-            <p>6 porții</p>
-          </div>
-
         </div>
       </div>
     </div>
   </div>
-  <div class="row">
-    <br><br><br>
-  </div>
+
   <!-- Footer -->
   <footer class="container-fluid text-center" id="footer-section">
     <div class="row center-element wrapper-footer-meniu" style="padding-top: 37px;">
       <div class="col-md-3">
-        <img src="../../../Images/logo-white.png" width="100" height="50" id="footer-img-logo"
-          alt="Eisberg Gelato Logo" />
+        <img src="/Images/logo-white.png" width="100" height="50" id="footer-img-logo">
         <div class="contact-info-footer">
           <p class="text-center"><span>SUNAȚI ACUM LA:</span><br />0755 046 429</p>
           <p class="text-center"><span>ADRESA DE EMAIL:</span><br />office@eisberg-gelato.ro</p>
-          <p class="text-center"><span>Urmăriți-ne pe:</span><br />
+          <p class="text-center"><span>URMĂRIȚI-NE PE:</span><br />
             <a href="https://www.facebook.com/EisbergGelato" target="_blank" class="footer-social-icon-color">
               <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor" class="bi bi-facebook"
                 viewBox="0 0 16 16">
@@ -246,20 +248,22 @@
         </div>
       </div>
       <div class="col-md-3">
-        <h5>Despre Noi</h5>
-        <a href="#">Despre Eisberg</a><br>
-        <a href="#">Istoria Noastră</a><br>
-        <a href="#">Viziunea Eisberg</a>
+        <h5 style="text-decoration: underline;">Despre Noi</h5>
+        <a class="nav-link" href="/index.html#about"
+          onclick="window.location.href='/index.html#about'; return false;">Despre Eisberg</a><br>
+        <a class="nav-link" href="/index.html#about"
+          onclick="window.location.href='/index.html#about'; return false;">Viziunea Eisberg</a>
       </div>
       <div class="col-md-3">
-        <h5>Produse</h5>
-        <a href="#">Deserturi</a><br>
-        <a href="#">Înghețată</a><br>
-        <a href="#">Fruttini Smoothies</a>
+        <h5 style="text-decoration: underline;">Produse</h5>
+        <a href="/produse/deserturi/monoportii/monoportii.html">Deserturi</a><br>
+        <a href="/produse/inghetate/inghetata-monoportii.html">Înghețată</a><br>
+        <a href="/produse/fruttini-smoothies/fruttini-smoothies.html">Fruttini Smoothies</a>
       </div>
       <div class="col-md-3">
-        <h5>Info utile</h5>
-        <a href="#">Contact</a><br>
+        <h5 style="text-decoration: underline;">Info utile</h5>
+        <a class="nav-link" href="/index.html#contact"
+          onclick="window.location.href='/index.html#contact'; return false;">Contact</a><br>
         <a href="#">Politică de Confidențialitate</a><br>
         <a href="#">Termeni și Condiții</a><br>
         <a href="#">Politică Cookies</a>
@@ -271,7 +275,7 @@
     <p
       style="text-align: center !important; font-family: 'Roboto'; font-size: 12px; font-weight: 100; color: grey; background-color: #fff; margin-bottom: 0;">
       <b><i>Eisberg © Copyright 2025 | Powered by
-          <img src="../../../Images/fsp.ico" title="FSP" alt="FSP" tooltip="FPS" style="width: 19px; height: 19px;" />
+          <image src="/Images/fsp.ico" title="FSP" alt="FSP" tooltip="FPS" style="width: 19px; height: 19px;" />
         </i></b>
     </p>
   </footer>
