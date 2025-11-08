@@ -40,7 +40,7 @@ $body .= "Telefon: $phoneSafe\n\n";
 $body .= "Mesaj:\n$messageSafe\n\n";
 $body .= "----\nIP: " . $_SERVER['REMOTE_ADDR'];
 
-$headers = "From: eisberg-gelato.ro\r\n";
+$headers = "From: Formular contact - eisberg-gelato \r\n";
 $headers .= "Reply-To: $email\r\n";
 $headers .= "Content-Type: text/plain; charset=utf-8\r\n";
 
