@@ -1476,6 +1476,10 @@ div#mini-menu-carousel .carousel-inner img {
 
 /********************************/
 
+.form-group input {
+    margin-bottom: 19px;
+}
+
 .various-desserts-presentation-title {
     font-family: 'Roboto';
     font-weight: bold;
@@ -2229,6 +2233,10 @@ div#mini-menu-carousel .carousel-inner img {
     .container-fluid.justify-content-center.text-center {
         justify-content: right !important;
         padding-right: 19px;
+    }
+
+    .navbar {
+        text-transform: uppercase;
     }
 
     #navbarSupportedContent {

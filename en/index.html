@@ -59,7 +59,7 @@
   </div>
 
   <!-- Navbar  -->
-  <nav class="navbar navbar-expand-sm navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid justify-content-center text-center">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -67,82 +67,71 @@
       </button>
 
       <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-lg-0">
+        <ul class="navbar-nav">
+
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/en/index.html">HOME</a>
+            <a class="nav-link active" href="/en/index.html">HOME</a>
           </li>
+
           <li class="nav-item">
             <a class="nav-link" href="#about">ABOUT US</a>
           </li>
+
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownProducts" role="link"
-              data-bs-toggle="dropdown" aria-expanded="false">PRODUCTS <i class="arrow down"
-                id="navbarDropdownProducts"></i></a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdownProducts" id="products-submenu"
-              style="width: 201px;">
-              <li class="nav-item dropend">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownDesserts" role="link"
-                  data-bs-toggle="dropdown" aria-expanded="false">DESSERTS</a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownDesserts" id="deserts-submenu"
-                  style="width: 201px !important;">
-                  <li>
-                    <a class="dropdown-item"
-                      href="/en/products/deserts/single-serving/single-serving.html">Single-Serving</a>
-                  </li>
-                  <li>
-                    <hr class="dropdown-divider">
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="/en/products/deserts/cakes/cakes.html">Cakes</a>
-                  </li>
-                  <li>
-                    <hr class="dropdown-divider">
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="/en/products/deserts/slice-n-go/slice-n-go.html">SLICE N`GO</a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li class="nav-item dropend">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="link" data-bs-toggle="dropdown"
-                  aria-expanded="false">Ice Cream</a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="width: 253px;">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" id="products-menu-item">PRODUCTS <i
+                class="arrow down" id="navbarDropdownProducts"></i></a>
+            <ul class="dropdown-menu">
+
+              <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle" href="#">DESSERTS <i class="arrow right arrow-right-margin"
+                    id="navbarDropdownProducts"></i></a>
+                <ul class="dropdown-menu submenu">
                   <li><a class="dropdown-item"
-                      href="/en/products/ice-creams/single-serving-ice-cream.html">Single-Serving Ice
-                      Cream</a></li>
+                      href="/en/products/deserts/single-serving/single-serving.html">Single-Serving</a></li>
                   <li>
                     <hr class="dropdown-divider">
                   </li>
-                  <li><a class="dropdown-item" href="/en/products/ice-creams/tray-ice-cream.html">Tray Ice Cream</a>
+                  <li><a class="dropdown-item" href="/en/products/deserts/cakes/cakes.html">Cakes</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="/en/products/deserts/slice-n-go/slice-n-go.html">Slice n’ Go</a>
                   </li>
                 </ul>
               </li>
               <li>
                 <hr class="dropdown-divider">
               </li>
-              <li><a class="dropdown-item" href="/en/products/fruttini-smoothies/fruttini-smoothies.html">FRUTTINI
-                  SMOOTHIES</a></li>
+              <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle" href="#">Înghețată <i class="arrow right arrow-right-margin"
+                    id="navbarDropdownProducts"></i></a>
+                <ul class="dropdown-menu submenu">
+                  <li><a class="dropdown-item"
+                      href="/en/products/ice-creams/single-serving-ice-cream.html">Single-Serving</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="/en/products/ice-creams/tray-ice-cream.html">Tray</a></li>
+                </ul>
+              </li>
+
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="/en/products/fruttini-smoothies/fruttini-smoothies.html">Fruttini
+                  Smoothies</a></li>
             </ul>
           </li>
-          <script>
-            $(document).ready(function () {
-              $("a[href='produse.html']").click(function (event) {
-                event.preventDefault();
-                $("#products-submenu").toggle();
-              });
-            });
-          </script>
-          <li class="nav-item" id="contact-menu-item">
-            <a class="nav-link" href="#contact">CONTACT</a>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
           </li>
+
           <li class="nav-item" id="language">
             <a href="/index.html"><img src="/Images/flags/ro-flag-ico.ico" alt="Ro flag" class="flag flag-ro"
-                title="RO"></img></a>
+                title="RO" /></a>
             <a href="/en/index.html"><img src="/Images/flags/usa-flag.ico" alt="Usa flag" class="flag flag-usa"
-                title="EN"></img></a>
+                title="EN" /></a>
           </li>
         </ul>
       </div>
@@ -487,21 +476,21 @@
         </div>
 
         <div class="col-md-3 contact-form-info">
-          <form class="contact-form">
+          <form action="/components/form/sendContactEmail.php" method="POST" class="contact-form">
             <div class="form-group">
-              <input type="text" class="form-control" id="name" placeholder="Full Name">
+              <input type="text" class="form-control" id="name" name="name" placeholder="Full Name" required>
             </div>
             <div class="form-group">
-              <input type="email" class="form-control" id="email" placeholder="Email">
+              <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
             </div>
             <div class="form-group">
-              <input type="text" class="form-control" id="phone" placeholder="Phone">
+              <input type="text" class="form-control" id="phone" name="phoneNumber" placeholder="Phone">
             </div>
             <div class="form-group">
-              <textarea class="form-control" id="message" rows="5" placeholder="Message"></textarea>
+              <textarea class="form-control" id="message" name="message" rows="5" placeholder="Message" required></textarea>
             </div>
             <div class="form-group form-check">
-              <input type="checkbox" class="form-check-input" id="terms">
+              <input type="checkbox" class="form-check-input" id="terms" required>
               <label class="form-check-label" for="terms">I agree to the terms and conditions of the site and to my
                 personal data being processed in order to complete this
                 request for offer</label>
@@ -738,7 +727,42 @@
       });
     </script>
   </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Apply submenu toggle for mobile only
+      if (window.innerWidth < 992) {
+        document.querySelectorAll('.dropdown-submenu > a').forEach(function (el) {
+          el.addEventListener('click', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
 
+            const submenu = this.nextElementSibling;
+            if (submenu) {
+              submenu.classList.toggle('show');
+            }
+
+            // Close other open submenus
+            this.closest('.dropdown-menu')
+              .querySelectorAll('.submenu')
+              .forEach(function (otherSubmenu) {
+                if (otherSubmenu !== submenu) {
+                  otherSubmenu.classList.remove('show');
+                }
+              });
+          });
+        });
+
+        // When parent dropdown closes, hide all submenus
+        document.querySelectorAll('.dropdown').forEach(function (dd) {
+          dd.addEventListener('hidden.bs.dropdown', function () {
+            this.querySelectorAll('.submenu').forEach(function (submenu) {
+              submenu.classList.remove('show');
+            });
+          });
+        });
+      }
+    });
+  </script>
 </body>
 
 </html>

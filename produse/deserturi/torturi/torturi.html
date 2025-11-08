@@ -34,7 +34,7 @@
   </div>
 
   <!-- Navbar  -->
-  <nav class="navbar navbar-expand-sm navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid justify-content-center text-center">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,76 +42,70 @@
       </button>
 
       <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav">
+
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/index.html">ACASA</a>
+            <a class="nav-link active" href="/index.html">Acasă</a>
           </li>
+
           <li class="nav-item">
             <a class="nav-link" href="/index.html#about"
               onclick="window.location.href='/index.html#about'; return false;">DESPRE NOI</a>
           </li>
+
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownProducts" role="link"
-              data-bs-toggle="dropdown" aria-expanded="false">PRODUSE <i class="arrow down"
-                id="navbarDropdownProducts"></i></a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdownProducts" id="products-submenu">
-              <li class="nav-item dropend">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownDesserts" role="link"
-                  data-bs-toggle="dropdown" aria-expanded="false">DESERTURI</a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownDesserts" id="deserts-submenu">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" id="products-menu-item">Produse <i
+                class="arrow down" id="navbarDropdownProducts"></i></a>
+            <ul class="dropdown-menu">
+
+              <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle" href="#">Deserturi <i class="arrow right arrow-right-margin"
+                    id="navbarDropdownProducts"></i></a>
+                <ul class="dropdown-menu submenu">
                   <li><a class="dropdown-item" href="/produse/deserturi/monoportii/monoportii.html">Monoporții</a></li>
                   <li>
                     <hr class="dropdown-divider">
                   </li>
-                  <li><a class="dropdown-item" href="/produse/deserturi/torturi/torturi.html">TORTURI</a></li>
+                  <li><a class="dropdown-item" href="/produse/deserturi/torturi/torturi.html">Torturi</a></li>
                   <li>
                     <hr class="dropdown-divider">
                   </li>
-                  <li><a class="dropdown-item" href="/produse/deserturi/slice-n-go/slice-n-go.html">SLICE N`GO</a></li>
+                  <li><a class="dropdown-item" href="/produse/deserturi/slice-n-go/slice-n-go.html">Slice n’ Go</a></li>
                 </ul>
               </li>
               <li>
                 <hr class="dropdown-divider">
               </li>
-              <li class="nav-item dropend">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="link" data-bs-toggle="dropdown"
-                  aria-expanded="false">Înghețată</a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="/produse/inghetate/inghetata-monoportii.html">monoporții</a></li>
+              <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle" href="#">Înghețată <i class="arrow right arrow-right-margin"
+                    id="navbarDropdownProducts"></i></a>
+                <ul class="dropdown-menu submenu">
+                  <li><a class="dropdown-item" href="/produse/inghetate/inghetata-monoportii.html">Monoporții</a></li>
                   <li>
                     <hr class="dropdown-divider">
                   </li>
-                  <li><a class="dropdown-item" href="/produse/inghetate/inghetata-in-vascheta.html">vaschetă</a></li>
+                  <li><a class="dropdown-item" href="/produse/inghetate/inghetata-in-vascheta.html">Vaschetă</a></li>
                 </ul>
               </li>
+
               <li>
                 <hr class="dropdown-divider">
               </li>
-              <li><a class="dropdown-item" href="/produse/fruttini-smoothies/fruttini-smoothies.html">FRUTTINI
-                  SMOOTHIES</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="/produse/valori-nutritionale.pdf">VALORI NUTRITIONALE</a></li>
+              <li><a class="dropdown-item" href="/produse/fruttini-smoothies/fruttini-smoothies.html">Fruttini
+                  Smoothies</a></li>
             </ul>
           </li>
-          <script>
-            $(document).ready(function () {
-              $("a[href='produse.html']").click(function (event) {
-                event.preventDefault();
-                $("#products-submenu").toggle();
-              });
-            });
-          </script>
-          <li class="nav-item" id="contact-menu-item">
+
+          <li class="nav-item">
             <a class="nav-link" href="/index.html#contact"
               onclick="window.location.href='/index.html#contact'; return false;">CONTACT</a>
           </li>
+
           <li class="nav-item" id="language">
             <a href="/produse/deserturi/torturi/torturi.html"><img src="/Images/flags/ro-flag-ico.ico" alt="Ro flag"
-                class="flag flag-ro" title="RO"></img></a>
+                class="flag flag-ro" title="RO"/></a>
             <a href="/en/products/deserts/cakes/cakes.html"><img src="/Images/flags/usa-flag.ico" alt="Usa flag"
-                class="flag flag-usa" title="EN"></img></a>
+                class="flag flag-usa" title="EN"/></a>
           </li>
         </ul>
       </div>
@@ -127,7 +121,7 @@
 
       <!-- Header section -->
       <div class="row row-cols-auto justify-content-center header-section-title">
-        <h3 class="carousel-caption-description-adjective" style="color: #fb3521 !important;">eisberg gelato</h3>
+        <h3 class="carousel-caption-description-adjective" style="color: #fb3521 !important;">deserturi</h3>
       </div>
       <div class="row row-cols-auto justify-content-center header-section-subtitle">
         <h3 class="carousel-caption-description">TORTURI</h3>
@@ -366,7 +360,42 @@
 
 
   </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Apply submenu toggle for mobile only
+      if (window.innerWidth < 992) {
+        document.querySelectorAll('.dropdown-submenu > a').forEach(function (el) {
+          el.addEventListener('click', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
 
+            const submenu = this.nextElementSibling;
+            if (submenu) {
+              submenu.classList.toggle('show');
+            }
+
+            // Close other open submenus
+            this.closest('.dropdown-menu')
+              .querySelectorAll('.submenu')
+              .forEach(function (otherSubmenu) {
+                if (otherSubmenu !== submenu) {
+                  otherSubmenu.classList.remove('show');
+                }
+              });
+          });
+        });
+
+        // When parent dropdown closes, hide all submenus
+        document.querySelectorAll('.dropdown').forEach(function (dd) {
+          dd.addEventListener('hidden.bs.dropdown', function () {
+            this.querySelectorAll('.submenu').forEach(function (submenu) {
+              submenu.classList.remove('show');
+            });
+          });
+        });
+      }
+    });
+  </script>
 </body>
 
 </html>

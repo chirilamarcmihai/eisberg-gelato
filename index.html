@@ -123,9 +123,9 @@
 
           <li class="nav-item" id="language">
             <a href="/index.html"><img src="/Images/flags/ro-flag-ico.ico" alt="Ro flag" class="flag flag-ro"
-                title="RO"></img></a>
+                title="RO"/></a>
             <a href="/en/index.html"><img src="/Images/flags/usa-flag.ico" alt="Usa flag" class="flag flag-usa"
-                title="EN"></img></a>
+                title="EN" /></a>
           </li>
         </ul>
       </div>
@@ -472,21 +472,21 @@
         </div>
 
         <div class="col-md-3 contact-form-info">
-          <form class="contact-form">
+          <form action="/components/form/sendContactEmail.php" method="POST" class="contact-form">
             <div class="form-group">
-              <input type="text" class="form-control" id="name" placeholder="Nume complet">
+              <input type="text" class="form-control" id="name" name="name" placeholder="Nume complet" required>
             </div>
             <div class="form-group">
-              <input type="email" class="form-control" id="email" placeholder="Email">
+              <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
             </div>
             <div class="form-group">
-              <input type="text" class="form-control" id="phone" placeholder="Telefon">
+              <input type="tel" class="form-control" id="phone" name="phoneNumber" placeholder="Telefon">
             </div>
             <div class="form-group">
-              <textarea class="form-control" id="message" rows="5" placeholder="Mesaj"></textarea>
+              <textarea class="form-control" id="message" rows="5" name="message" placeholder="Mesaj" required></textarea>
             </div>
             <div class="form-group form-check">
-              <input type="checkbox" class="form-check-input" id="terms">
+              <input type="checkbox" class="form-check-input" id="terms" required>
               <label class="form-check-label" for="terms">Sunt de acord cu termenii și condițiile
                 site-ului și ca datele mele personale să fie prelucrate în vederea finalizării acestei
                 cereri de ofertă</label>
@@ -523,7 +523,6 @@
       </div>
       <br><br> <br><br>
     </div>
-
 
     <!-- Footer -->
     <footer class="container-fluid text-center" id="footer-section">
@@ -589,7 +588,7 @@
       <p
         style="text-align: center !important; font-family: 'Roboto'; font-size: 12px; font-weight: 100; color: grey; background-color: #fff; margin-bottom: 0;">
         <b><i>Eisberg © Copyright 2025 | Powered by
-            <image src="/Images/fsp.ico" title="FSP" alt="FSP" tooltip="FPS" style="width: 19px; height: 19px;" />
+            <img src="/Images/fsp.ico" title="FSP" alt="FSP" tooltip="FPS" style="width: 19px; height: 19px;" />
           </i></b>
       </p>
     </footer>
