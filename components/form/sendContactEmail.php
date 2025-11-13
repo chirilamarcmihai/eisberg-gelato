@@ -33,11 +33,11 @@ foreach ([$name, $email, $phoneNumber] as $value) {
 $to = "office@eisberg-gelato.ro";  
 $subject = "Mail nou de contact de pe website";
 
-$body = "Ai primit un mail nou de contact de pe website:\n\n";
+$body = "Formular contact website:\n\n";
 $body .= "Nume: $nameSafe\n";
 $body .= "Email: $email\n";
 $body .= "Telefon: $phoneSafe\n\n";
-$body .= "Mesaj:\n$messageSafe\n\n";
+$body .= "Mesaj: $messageSafe\n\n";
 $body .= "----\nIP: " . $_SERVER['REMOTE_ADDR'];
 
 $headers = "From: Formular contact - eisberg-gelato \r\n";
