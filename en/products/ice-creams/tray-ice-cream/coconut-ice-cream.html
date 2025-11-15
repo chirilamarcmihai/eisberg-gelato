@@ -24,7 +24,7 @@
   <link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
 
-<body id="monoportiiPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+<body id="icecreamPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
   <!-- Logo -->
   <div class="jumbotron clearfix">
@@ -34,7 +34,7 @@
   </div>
 
   <!-- Navbar  -->
-  <nav class="navbar navbar-expand-sm navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid justify-content-center text-center">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,84 +42,76 @@
       </button>
 
       <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-lg-0">
+        <ul class="navbar-nav">
+
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/en/index.html">HOME</a>
+            <a class="nav-link active" href="/en/index.html">HOME</a>
           </li>
+
           <li class="nav-item">
             <a class="nav-link" href="/en/index.html#about"
               onclick="window.location.href='/en/index.html#about'; return false;">ABOUT US</a>
           </li>
+
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownProducts" role="link"
-              data-bs-toggle="dropdown" aria-expanded="false">PRODUCTS <i class="arrow down"
-                id="navbarDropdownProducts"></i></a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdownProducts" id="products-submenu"
-              style="width: 201px;">
-              <li class="nav-item dropend">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownDesserts" role="link"
-                  data-bs-toggle="dropdown" aria-expanded="false">DESSERTS</a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownDesserts" id="deserts-submenu"
-                  style="width: 201px !important;">
-                  <li>
-                    <a class="dropdown-item"
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" id="products-menu-item">PRODUCTS <i
+                class="arrow down" id="navbarDropdownProducts"></i></a>
+            <ul class="dropdown-menu">
+
+              <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle" href="#">DESSERTS <i class="arrow right arrow-right-margin"
+                    id="navbarDropdownProducts"></i></a>
+                <ul class="dropdown-menu submenu">
+                  <li><a class="dropdown-item"
                       href="/en/products/deserts/single-serving/single-serving.html">Single-Serving</a>
                   </li>
                   <li>
                     <hr class="dropdown-divider">
                   </li>
-                  <li>
-                    <a class="dropdown-item" href="/en/products/deserts/cakes/cakes.html">Cakes</a>
+                  <li><a class="dropdown-item" href="/en/products/deserts/cakes/cakes.html">Cakes</a>
                   </li>
                   <li>
                     <hr class="dropdown-divider">
                   </li>
-                  <li>
-                    <a class="dropdown-item" href="/en/products/deserts/slice-n-go/slice-n-go.html">SLICE N`GO</a>
+                  <li><a class="dropdown-item" href="/en/products/deserts/slice-n-go/slice-n-go.html">Slice n’ Go</a>
                   </li>
                 </ul>
               </li>
               <li>
                 <hr class="dropdown-divider">
               </li>
-              <li class="nav-item dropend">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="link" data-bs-toggle="dropdown"
-                  aria-expanded="false">Ice Cream</a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="width: 253px;">
+              <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle" href="#">ICE CREAM <i class="arrow right arrow-right-margin"
+                    id="navbarDropdownProducts"></i></a>
+                <ul class="dropdown-menu submenu">
                   <li><a class="dropdown-item"
-                      href="/en/products/ice-creams/single-serving-ice-cream.html">Single-Serving Ice
-                      Cream</a></li>
+                      href="/en/products/ice-creams/single-serving-ice-cream.html">Single-Serving</a>
+                  </li>
                   <li>
                     <hr class="dropdown-divider">
                   </li>
-                  <li><a class="dropdown-item" href="/en/products/ice-creams/tray-ice-cream.html">Tray Ice Cream</a>
-                  </li>
+                  <li><a class="dropdown-item" href="/en/products/ice-creams/tray-ice-cream.html">Tray</a></li>
                 </ul>
               </li>
+
               <li>
                 <hr class="dropdown-divider">
               </li>
-              <li><a class="dropdown-item" href="/en/products/fruttini-smoothies/fruttini-smoothies.html">FRUTTINI
-                  SMOOTHIES</a></li>
+              <li><a class="dropdown-item" href="/en/products/fruttini-smoothies/fruttini-smoothies.html">Fruttini
+                  Smoothies</a></li>
             </ul>
           </li>
-          <script>
-            $(document).ready(function () {
-              $("a[href='produse.html']").click(function (event) {
-                event.preventDefault();
-                $("#products-submenu").toggle();
-              });
-            });
-          </script>
-          <li class="nav-item" id="contact-menu-item">
+
+          <li class="nav-item">
             <a class="nav-link" href="/en/index.html#contact"
-              onclick="window.location.href='/en/index.html#contact'; return false;">CONTACT</a>
+              onclick="window.location.href='/en/index.html#contact'; return false;">Contact</a>
           </li>
+
           <li class="nav-item" id="language">
             <a href="/produse/inghetate/inghetata-in-vascheta/inghetata-kokos.html"><img
-                src="/Images/flags/ro-flag-ico.ico" alt="RO" class="flag flag-ro" title="RO"/></a>
+                src="/Images/flags/ro-flag-ico.ico" alt="RO" class="flag flag-ro" title="RO" /></a>
             <a href="/en/products/ice-creams/tray-ice-cream/coconut-ice-cream.html"><img
-                src="/Images/flags/usa-flag.ico" alt="EN" class="flag flag-usa" title="EN"/></a>
+                src="/Images/flags/usa-flag.ico" alt="EN" class="flag flag-usa" title="EN" /></a>
           </li>
         </ul>
       </div>
@@ -129,7 +121,7 @@
   <div style="border-bottom: 1px solid #c5c5c5;box-shadow: 0px 7px 16px #747474, 0px 0px 7px #797676;"></div>
 
   <!-- Container -->
-  <div id="monoportii" class="container-fluid">
+  <div id="icecream" class="container-fluid">
     <div class="container-fluid">
 
       <!-- Header section -->
@@ -153,29 +145,27 @@
               cream with white chocolate sauce and wafer pieces</h3>
           </div>
 
-          <!-- Tabs product info -->
-          <div class="row tabs-product-details">
-            <div class="tab">
-              <button class="tablinks active" onclick="openTab(event, 'Description')">Description</button>
-              <button class="tablinks" onclick="openTab(event, 'Ingredients')">Ingredients</button>
+          <!-- Info product  -->
+          <div class="info-product-details">
+            <div class="row row-cols-auto" id="product-details-section">
+              <div class="col-sm-auto">
+                <img src="/Images/glyphs/product_details.png" alt="Product details"
+                  style="width: 21px; height: 17px; margin-top: -4px;" />
+              </div>
+              <div class="col-sm-3" style="padding-left: 0;">
+                <p style="color: #fb3521; font-family: 'Roboto';">Description</p>
+              </div>
             </div>
 
-            <div id="Description" class="tabcontent" style="display: block;">
+            <div class="row row-cols-auto">
               <p>Coconut ice cream with white chocolate sauce and wafer pieces
               </p>
             </div>
 
-            <div id="Ingredients" class="tabcontent">
-              <p>coconut, white chocolate sauce, wafer pieces</p>
-            </div>
-          </div>
-
-          <!-- Info product  -->
-          <div class="info-product-details">
             <div class="row row-cols-auto">
               <div class="col-sm-2">
                 <img src="/Images/glyphs/spoon-sm.png" alt="Spoon"
-                  style="width: 21px; height: 17px; margin-top: -4px;"/>
+                  style="width: 21px; height: 17px; margin-top: -4px;" />
               </div>
 
               <div class="col-sm-3" style="padding-left: 0;">
@@ -191,7 +181,7 @@
             <div class="row row-cols-auto">
               <div class="col-sm-2">
                 <img src="/Images/glyphs/balance-scale-sm.png" alt="Balance scale"
-                  style="width: 21px; height: 17px; margin-top: -2px;"/>
+                  style="width: 21px; height: 17px; margin-top: -2px;" />
               </div>
               <div class="col-sm-3" style="padding-left: 0;">
                 <p style="color: #fb3521; font-family: 'Roboto'">Weight</p>
@@ -205,7 +195,7 @@
             <div class="row row-cols-auto">
               <div class="col-sm-auto">
                 <img src="/Images/glyphs/pie-slice-sm.png" alt="Pie slice"
-                  style="width: 21px; height: 17px; margin-top: -2px;"/>
+                  style="width: 21px; height: 17px; margin-top: -2px;" />
               </div>
               <div class="col-sm-3" style="padding-left: 0;">
                 <p style="color: #fb3521; font-family: 'Roboto'">Servings / box</p>
@@ -226,8 +216,32 @@
       <div class="col-md-3">
         <img src="/Images/logo-white.png" width="100" height="50" id="footer-img-logo">
         <div class="contact-info-footer">
-          <p class="text-center"><span>CALL US:</span><br />0755 046 429</p>
-          <p class="text-center"><span>EMAIL:</span><br />office@eisberg-gelato.ro</p>
+          <p>
+            <span>
+              <svg _ngcontent-nqu-c17="" xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor"
+                viewBox="0 0 16 16" class="bi bi-telephone">
+                <path _ngcontent-nqu-c17=""
+                  d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z">
+                </path>
+              </svg>
+            </span>
+            <span style="margin-left: 5px; ">0755 046 429</span>
+          </p>
+
+          <p>
+            <span>
+              <svg _ngcontent-nqu-c17="" xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor"
+                viewBox="0 0 16 16" class="bi bi-envelope-at">
+                <path _ngcontent-nqu-c17=""
+                  d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2H2Zm3.708 6.208L1 11.105V5.383l4.708 2.825ZM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2-7-4.2Z">
+                </path>
+                <path _ngcontent-nqu-c17=""
+                  d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648Zm-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z">
+                </path>
+              </svg>
+            </span>
+            <span style="margin-left: 5px;">office@eisberg-gelato.ro</span>
+          </p>
           <p class="text-center"><span>FOLLOW US:</span><br />
             <a href="https://www.facebook.com/EisbergGelato" target="_blank" class="footer-social-icon-color">
               <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor" class="bi bi-facebook"
@@ -279,9 +293,6 @@
         <a href="#">Cookies Policy</a>
       </div>
     </div>
-    <a href="#eisbergPage" title="To Top">
-      <span class="glyphicon glyphicon-chevron-up"></span>
-    </a>
     <p
       style="text-align: center !important; font-family: 'Roboto'; font-size: 12px; font-weight: 100; color: grey; background-color: #fff; margin-bottom: 0;">
       <b><i>Eisberg © Copyright 2025 | Powered by
@@ -400,7 +411,42 @@
       dots[slideIndex - 1].className += " active";
     }
   </script>
-  </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Apply submenu toggle for mobile only
+      if (window.innerWidth < 992) {
+        document.querySelectorAll('.dropdown-submenu > a').forEach(function (el) {
+          el.addEventListener('click', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            const submenu = this.nextElementSibling;
+            if (submenu) {
+              submenu.classList.toggle('show');
+            }
+
+            // Close other open submenus
+            this.closest('.dropdown-menu')
+              .querySelectorAll('.submenu')
+              .forEach(function (otherSubmenu) {
+                if (otherSubmenu !== submenu) {
+                  otherSubmenu.classList.remove('show');
+                }
+              });
+          });
+        });
+
+        // When parent dropdown closes, hide all submenus
+        document.querySelectorAll('.dropdown').forEach(function (dd) {
+          dd.addEventListener('hidden.bs.dropdown', function () {
+            this.querySelectorAll('.submenu').forEach(function (submenu) {
+              submenu.classList.remove('show');
+            });
+          });
+        });
+      }
+    });
+  </script>
 </body>
 
 </html>
