@@ -88,6 +88,14 @@ h4 {
     flex: 1;
 }
 
+#gelato-sorbetto {
+    display: flex;
+    margin: auto;
+    justify-content: center !important;
+    color: #fb3521 !important;
+    width: 59%;
+    margin-top: 31px;
+}
 
 /******** Tabs ***********************/
 
@@ -1790,7 +1798,8 @@ div#mini-menu-carousel .carousel-inner img {
         width: 53% !important;
     }
 
-    .col-sm-4, .header-section-subtitle {
+    .col-sm-4,
+    .header-section-subtitle {
         width: 100% !important;
         margin-left: 0px;
         margin-right: 0px;
